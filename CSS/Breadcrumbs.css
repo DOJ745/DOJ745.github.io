@@ -1,0 +1,95 @@
+            /* 1) Хлебные крошки брал с сайта http://bologer.ru/kak-sdelat-xlebnye-kroshki-na-sajte-s-pomoshhyu-css/ */
+
+/*Пока что убрал, много места занимали*/
+
+        /* 2) С сайта http://beloweb.ru/wp/krasivyie-hlebnyie-kroshki-breadcrumbs-dlya-obyichnogo-sayta-i-dlya-blogov-wordpress-na-css3.html*/
+
+ul
+{
+ list-style: none;
+}
+
+#Crumbs
+{
+ background: brown;
+ border-width: 1px;
+ border-style: solid;
+ border-color: black rgb(193, 91, 91) #b23737;
+ border-radius: 5px;
+ box-shadow: 0 0 2px rgba(0,0,0,.2);
+    
+ overflow: hidden;
+ -moz-scrollbars-none;    
+ width: 640px;
+ height: 35px;
+ margin: auto;
+}
+ 
+#Crumbs li
+{
+ float: left;
+}
+ 
+#Crumbs a
+{
+ padding: .7em 1em .7em 2em;
+ float: left;
+ text-decoration: none;
+ color: #444;
+ position: relative;
+ text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ background-color: #ddd;
+ background-image: linear-gradient(to right, #BF6D30, #FFD073);
+}
+ 
+#Crumbs li:first-child a
+{
+ padding-left: 1em;
+ border-radius: 5px 0 0 5px;
+}
+ 
+#Crumbs a:hover
+{
+ background: #fff;
+}
+ 
+#Crumbs a::after, #Crumbs a::before
+{
+ content: "";
+ position: absolute;
+ top: 50%;
+ margin-top: -1.5em;
+ border-top: 1.5em solid transparent;
+ border-bottom: 1.5em solid transparent;
+ border-left: 1em solid;
+ right: -1em;
+}
+ 
+#Crumbs a::after
+{
+ z-index: 2;
+ border-left-color: #FFD073;
+}
+ 
+#Crumbs a::before
+{
+ border-left-color: #BF6D30;
+ right: -1.1em;
+ z-index: 1;
+}
+ 
+#Crumbs a:hover::after
+{
+ border-left-color: #fff;
+}
+ 
+#Crumbs .current, #Crumbs .current:hover
+{
+ font-weight: bold;
+ background: none;
+}
+ 
+#Crumbs .current::after,#Crumbs .current::before
+{
+ content: normal;
+}

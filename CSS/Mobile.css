@@ -1,0 +1,51 @@
+                    /*-------------- Определяем параметры меню для мобильных устройств(адаптивность) --------------*/
+
+@media screen and (max-width: 768px)
+{
+    .topnav a:not(:first-child)
+    {
+        display: none; /* Элемент не будет показываться на странице */
+    }
+    
+    .topnav a.icon
+    {
+        float: right;
+        margin-top: -17px;
+        display: block; /* Элемент будет вести себя как блок div */
+        color: black;
+    }
+    
+    nav
+    {
+        width: 100%;
+        max-height: 100%;
+        display: inline-block;
+    }
+    
+    .topnav.responsive
+    {
+        position: relative;
+        max-height: 100%;
+    }
+    
+    .topnav.resposive a.icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    #content
+    {
+        text-align: left;
+        position: relative;
+        max-width: 100%;
+    }
+}

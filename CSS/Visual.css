@@ -1,0 +1,69 @@
+                            /* Не забывай писать комментарии к тем вещам, которые либо сложны в понимании,
+                                    либо для собственной перестраховки. Тупых комментариев не бывает */
+
+
+                                    /* -------------- Глобальные изменения для тегов -------------- */
+
+
+@font-face 
+{
+        font-family: medieval;    /* Гарнитура шрифта. Её в дальнейшем надо использовать для font-family */
+        src: url("../Fonts/Medieval font 2.ttf");   /* Путь к файлу со шрифтом */
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+   height: 100%;
+}
+
+body
+{
+    margin: 0 auto;
+    
+    font-family: medieval;
+    background: url("../background5.png" );
+    background-repeat: repeat;
+    background-position: center center;
+    
+    height: 100%;
+    max-width: 2200px;
+}
+
+body>*
+{
+    display: flex;
+}
+
+a
+{
+    text-decoration: none; /* Убираем оформление нажатых ссылок */
+}
+
+
+footer
+{
+    width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: red;
+}
+
+
+nav /* Навигационное меню - Общее положение */
+{
+    margin: auto;
+    width: 640px;
+    height: 45px;
+    border: 3px red solid;
+}
+
+header
+{
+    border: 3px purple dashed;
+}

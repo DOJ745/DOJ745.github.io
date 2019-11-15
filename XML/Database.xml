@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- База данных сайта -->
+<Site>
+    
+    <Mainpage>
+    </Mainpage>
+    
+    <WeaponMainPage>
+        
+        <SworsdMainPage>
+            
+            <PicturesList>
+                <Picrure1 path = "" border = ""></Picrure1>
+                <Picture2 path = "" border = ""></Picture2>
+            </PicturesList>
+            
+            <Info>
+            </Info>
+            
+            <Longsword>
+                
+                <Pictures>
+                    <Picrure1 path = "/Site/Pictures/Weapon/Swords/Sword.png" border = ""></Picrure1>
+                    <Picture2 path = "" border = ""></Picture2>
+                </Pictures>
+            
+                <Info>
+                </Info>
+                
+            </Longsword>
+            
+            <Greatsword>
+                
+                <Pictures>
+                    <Picrure1 path = "" border = ""></Picrure1>
+                    <Picture2 path = "" border = ""></Picture2>
+                </Pictures>
+            
+                <Info>
+                </Info>
+                
+            </Greatsword>
+            
+        </SworsdMainPage>
+        
+        <AxesMainPage>
+        </AxesMainPage>
+        
+        <WoodenMainPage>
+        </WoodenMainPage>
+        
+        <UniqueMainPage>
+        </UniqueMainPage>
+        
+    </WeaponMainPage>
+    
+    <ArmorMainPage>
+        
+        <EarlyChivarly>
+        </EarlyChivarly>
+        
+        <MiddleChivarly>
+        </MiddleChivarly>
+        
+        <LateChivarly>
+        </LateChivarly>
+        
+    </ArmorMainPage>
+    
+    <Contact>
+    </Contact>
+    
+    <About>
+    </About>
+    
+</Site>
