@@ -5,7 +5,6 @@ menu.onclick = function CLK()
     if(change_class.className === "topnav")
     {
         change_class.className += " responsive";
-        alert(change_class);
     }
     
     else
