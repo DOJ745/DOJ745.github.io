@@ -13,6 +13,8 @@
     margin: 0 auto;
     border: 3px aqua solid;
     flex-direction: column;
+    
+    flex-grow: 1;
 }
 
 #content 
@@ -77,5 +79,5 @@
 
 .topnav .icon /* Настройка иконки меню */
 {
-    
+    display: none;
 }

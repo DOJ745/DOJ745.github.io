@@ -8,7 +8,7 @@
 @font-face 
 {
         font-family: medieval;    /* Гарнитура шрифта. Её в дальнейшем надо использовать для font-family */
-        src: url("../Fonts/Medieval font 2.ttf");   /* Путь к файлу со шрифтом */
+        src: url("Fonts/Medieval font 2.ttf");   /* Путь к файлу со шрифтом */
 }
 
 *
@@ -48,10 +48,10 @@ a
 
 footer
 {
-    width: 100%;
-	height: 100px;
+    min-width: 100%;
+	height: 80px;
 	position: relative;
-	background-color: red;
+	background-color: none;
 }
 
 
