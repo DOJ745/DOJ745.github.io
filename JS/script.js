@@ -32,18 +32,17 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
 
-/* Получил массив тегов About
-У меня пока что только 1 тег about*/
+/* Получил тег About */
 
 var aboutText = doc.getElementsByTagName("About");
 
-/*Получаю содержимое тега text*/
+/*Получаю содержимое тегов text. Их всего три*/
 
 var first_parse = aboutText[0].getElementsByTagName("text")[0].innerHTML;
 var second_parse = aboutText[0].getElementsByTagName("text")[1].innerHTML;
 var third_parse = aboutText[0].getElementsByTagName("text")[2].innerHTML;
 
-/* Получаю абзац, куда буду вставлять текст*/
+/* Вставляю полученные тексты в теги с нужными id */
 
 document.getElementById("parse_here").innerHTML = first_parse;
 document.getElementById("parse_here2").innerHTML = second_parse;
