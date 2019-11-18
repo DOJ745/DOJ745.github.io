@@ -40,8 +40,11 @@ var aboutText = doc.getElementsByTagName("About");
 /*Получаю содержимое тега text*/
 
 var first_parse = aboutText[0].getElementsByTagName("text")[0].innerHTML;
+var second_parse = aboutText[0].getElementsByTagName("text")[1].innerHTML;
+var third_parse = aboutText[0].getElementsByTagName("text")[2].innerHTML;
 
 /* Получаю абзац, куда буду вставлять текст*/
-var p_parse = document.getElementById("parse_here").innerHTML;
 
 document.getElementById("parse_here").innerHTML = first_parse;
+document.getElementById("parse_here2").innerHTML = second_parse;
+document.getElementById("parse_here3").innerHTML = third_parse;
