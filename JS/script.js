@@ -35,13 +35,13 @@ var doc = parser.parseFromString(xmlDoc, "application/xml");
 /* Получил массив тегов About
 У меня пока что только 1 тег about*/
 
-var Site = doc.getElementsByTagName("About");
+var aboutText = doc.getElementsByTagName("About");
 
 /*Получаю содержимое тега text*/
 
 var first_parse = aboutText[0].getElementsByTagName("text")[0].innerHTML;
 
 /* Получаю абзац, куда буду вставлять текст*/
-//var p_parse = document.getElementById("parse_here").innerHTML;
+var p_parse = document.getElementById("parse_here").innerHTML;
 
-document.getElementById("parse_here") = first_parse;
+document.getElementById("parse_here").innerHTML = first_parse;
