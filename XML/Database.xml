@@ -14,31 +14,27 @@
                 <Picture2 path = "" border = ""></Picture2>
             </PicturesList>
             
-            <Info>
-            </Info>
+            <text>
+            </text>
             
             <Longsword>
-                
                 <Pictures>
                     <Picrure1 path = "/Site/Pictures/Weapon/Swords/Sword.png" border = ""></Picrure1>
                     <Picture2 path = "" border = ""></Picture2>
                 </Pictures>
             
-                <Info>
-                </Info>
-                
+                <text>
+                </text>
             </Longsword>
             
             <Greatsword>
-                
                 <Pictures>
                     <Picrure1 path = "" border = ""></Picrure1>
                     <Picture2 path = "" border = ""></Picture2>
                 </Pictures>
             
-                <Info>
-                </Info>
-                
+                <text>
+                </text>
             </Greatsword>
             
         </SworsdMainPage>
@@ -71,6 +67,8 @@
     </Contact>
     
     <About>
+        <text>
+        </text>
     </About>
     
 </Site>
