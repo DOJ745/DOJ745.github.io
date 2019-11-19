@@ -13,11 +13,6 @@ img.test_border
     -moz-border-image: url(../Pictures/Ornament4.png) 25% stretch;
 }
 
-p.text_test
-{
-    text-align: center;
-}
-
 #content h1
 {
     text-align: center;
@@ -26,4 +21,27 @@ p.text_test
 #content h2
 {
     text-align: center;
+}
+
+nav.test_border
+{
+       
+    border-image-source: url(/DOJ745.github.io/Pictures/Ornaments/Ornament10.png);
+    border-style: solid;
+    border-image-width: 16px;
+    border-image-slice: 45;
+    border-image-repeat: round;
+    border-image-outset: 3px;
+}
+
+#content
+{
+    padding: 17px;
+    
+    border-image-source: url(/DOJ745.github.io/Pictures/Ornaments/Ornament11.png);
+    border-style: solid;
+    border-image-width: 25px;
+    border-image-slice: 80;
+    border-image-repeat: round;
+    border-image-outset: 3px;
 }

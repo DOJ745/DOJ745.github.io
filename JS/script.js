@@ -1,3 +1,5 @@
+                                    /* ------------ Смена стиля nav для мобильных устройств ------------ */
+
 menu.onclick = function CLK()
 {
     var change_class = document.getElementById("myTopnav");
@@ -13,7 +15,7 @@ menu.onclick = function CLK()
 }
 
 
-/* Парсер XML*/
+                                            /* ------------ Парсер XML ------------ */
 
 if (window.XMLHttpRequest)
 { // для IE7+, Firefox, Chrome, Opera, Safari
@@ -36,7 +38,7 @@ var doc = parser.parseFromString(xmlDoc, "application/xml");
 
 var aboutText = doc.getElementsByTagName("About");
 
-/*Получаю содержимое тегов text. Их всего три*/
+/* Получаю содержимое тегов text. Их всего три */
 
 var first_parse = aboutText[0].getElementsByTagName("text")[0].innerHTML;
 var second_parse = aboutText[0].getElementsByTagName("text")[1].innerHTML;
