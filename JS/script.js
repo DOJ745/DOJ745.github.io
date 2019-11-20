@@ -53,12 +53,12 @@ document.getElementById("parse_here3").innerHTML = third_parse;
 /* Парсим информацию об картинках на страницу longsword_index.html */
 
 var longswordInfo = doc.getElementsByTagName("Longsword");
-var longswordPictures = longswordInfo[0].getElementsByTagName("Pictures");
+var longswordPicture = longswordInfo[0].getElementsByTagName("Picture1");
 
-var firstPicture = longswordPictures[0].getElementsByTagName("Picture1");
+/*var firstPicture = longswordPictures[0].getElementsByTagName("Picture1");*/
 
-var firstAttr = firstPicture[0].getAttribute("path");
-var secondAttr = firstPictur[0].getAttribute("border");
+var firstAttr = longswordPicture[0].getAttribute("path");
+var secondAttr = longswordPicture[0].getAttribute("border");
 
 var imgArray = document.getElementsByTagName("img");
 
