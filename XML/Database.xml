@@ -10,7 +10,7 @@
         <SworsdMainPage>
             
             <PicturesList>
-                <Picture1 path = "" border = ""></Picrure1>
+                <Picture1 path = "" border = ""></Picture1>
                 <Picture2 path = "" border = ""></Picture2>
             </PicturesList>
             
@@ -21,8 +21,7 @@
                 <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border"></Picture1>
                 <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border"></Picture2>
                 
-                <text>
-                </text>
+                <text></text>
             </Longsword>
             
             <Greatsword>
