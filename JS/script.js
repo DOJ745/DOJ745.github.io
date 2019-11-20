@@ -49,3 +49,17 @@ var third_parse = aboutText[0].getElementsByTagName("text")[2].innerHTML;
 document.getElementById("parse_here").innerHTML = first_parse;
 document.getElementById("parse_here2").innerHTML = second_parse;
 document.getElementById("parse_here3").innerHTML = third_parse;
+
+/* Парсим информацию об картинках на страницу longsword_index.html */
+
+var longswordInfo = doc.getElementsByTagName("Longsword");
+var longswordPictures = longswordInfo[0].getElementsByTagName("Pictures");
+
+var firstPicture = longswordPictures[0].getElementsByTagName("Picture1");
+
+var firstAttr = firstPicture[0].getAttribute("path");
+var secondAttr = firstPictur[0].getAttribute("border");
+
+var imgArray = document.getElementsByTagName("img");
+
+imgArray[0].setAttribute(src, firstAttr);
