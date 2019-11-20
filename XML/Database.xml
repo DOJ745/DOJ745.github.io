@@ -18,9 +18,8 @@
             </text>
             
             <Longsword>
-                <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border"></Picture1>
-                <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border"></Picture2>
-                
+                <Picture1 path = "&frasl;DOJ745.github.io&frasl;Pictures&frasl;Weapon&frasl;Swords&frasl;Sword.png" border = "test&frasl;border"></Picture1>
+                <Picture2 path = "" border = ""></Picture2>
                 <text></text>
             </Longsword>
             
