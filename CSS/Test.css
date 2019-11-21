@@ -28,8 +28,8 @@ nav.test_border
        
     border-image-source: url(/DOJ745.github.io/Pictures/Ornaments/Ornament10.png);
     border-style: solid;
-    border-image-width: 16px;
-    border-image-slice: 45;
+    border-image-width: 19px;
+    border-image-slice: 50;
     border-image-repeat: round;
     border-image-outset: 3px;
 }
