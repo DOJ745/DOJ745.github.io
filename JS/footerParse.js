@@ -18,10 +18,10 @@ var doc = parser.parseFromString(xmlDoc, "application/xml");
 var footerInfo = doc.getElementsByTagName("Footer");
 var footer_text = footerInfo[0].getElementsByTagName("text");
 
-var footer_parse = doc.getElementById("Footer");
+var footer_parse = document.getElementById("Footer");
 var footer_parse_p = footer_parse.getElementsByTagName("p");
 
 for(let i = 0; i < footer_parse_p.length; i++)
 {
-    footer_parse_p[i].innerHTML = footer_text[i];    
+    footer_parse_p[i].innerHTML = footer_text[i].innerHTML;    
 }
