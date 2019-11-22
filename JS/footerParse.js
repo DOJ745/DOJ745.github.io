@@ -15,8 +15,13 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
 
-var contactInfo = doc.getElementsByTagName("Contact");
-var contact_text = contactInfo[0].getElementsByTagName("text");
+var footerInfo = doc.getElementsByTagName("Footer");
+var footer_text = footerInfo[0].getElementsByTagName("text");
 
-var p_parse = document.getElementById("parse");
-p_parse.innerHTML = contact_text[0].innerHTML;
+var footer_parse = doc.getElementById("Footer");
+var footer_parse_p = footer_parse.getElementsByTagName("p");
+
+for(let i = 0; i < footer_parse_p.length; i++)
+{
+    footer_parse_p[i].innerHTML = footer_text[i];    
+}

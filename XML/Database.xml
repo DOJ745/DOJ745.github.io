@@ -10,27 +10,25 @@
         <SworsdMainPage>
             
             <PicturesList>
-                <Picture1 path = "" border = ""></Picture1>
-                <Picture2 path = "" border = ""></Picture2>
+                <Picture path = "" border = ""></Picture>
+                <Picture path = "" border = ""></Picture>
             </PicturesList>
             
             <text>
             </text>
             
             <Longsword>
-                <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "test_border"></Picture1>
-                <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border"></Picture2>
+                <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "test_border">LONGSWORD1</Picture1>
+                <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border">LONGSWORD2</Picture2>
                 <text></text>
             </Longsword>
             
             <Greatsword>
                 <Pictures>
-                    <Picture1 path = "" border = ""></Picture1>
-                    <Picture2 path = "" border = ""></Picture2>
+                    <Picture path = "" border = ""></Picture>
+                    <Picture path = "" border = ""></Picture>
                 </Pictures>
-            
-                <text>
-                </text>
+                <text></text>
             </Greatsword>
             
         </SworsdMainPage>
@@ -70,8 +68,9 @@
     </About>
     
     <Footer>
-        <text>
-        </text>
+        <text>Министерство образования РБ "Белорусскаий государственный технологический университет"</text>
+        <text>Контакты были утеряны гонцом в ходе неравной погони против 30 тевтонцев где-то в Литве</text>
+        <text>Авторские права были загажены чернильной плямбой в Полоцке</text>
     </Footer>
     
 </Site>
