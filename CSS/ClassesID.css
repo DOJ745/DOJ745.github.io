@@ -12,7 +12,6 @@
 {
     min-height: 100%;
     margin: 0 auto;
-    border: 3px red solid;
     flex-direction: column;
     
     flex-grow: 1;
@@ -60,6 +59,14 @@
     max-width: 100%;
      /* Свойства width и height включают в себя значения полей и границ, но не отступов*/
     box-sizing: border-box; 
+}
+
+.foot_img
+{
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 0px;
 }
 
 
