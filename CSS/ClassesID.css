@@ -25,6 +25,24 @@
     margin: 0 auto;
     border: 2px black solid;
     flex: 1;
+    
+    padding: 17px;
+    border-image-source: url(/DOJ745.github.io/Pictures/Ornaments/Ornament11.png);
+    border-style: solid;
+    border-image-width: 25px;
+    border-image-slice: 80;
+    border-image-repeat: round;
+    border-image-outset: 3px;
+}
+
+#content h1
+{
+    text-align: center;
+}
+
+#content h2
+{
+    text-align: center;
 }
 
 .logo /* Настраиваем блок, в котором будет логотип */
