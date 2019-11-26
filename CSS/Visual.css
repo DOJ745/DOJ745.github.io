@@ -42,12 +42,6 @@ body>*
     display: flex;
 }
 
-/*a
-{
-    text-decoration: none; /* Убираем оформление нажатых ссылок */
-} */
-
-
 footer
 {
     max-width: 100%;
@@ -58,16 +52,10 @@ footer
     flex-direction: column;
 }
 
-
-nav /* Навигационное меню - Общее положение */
-{
-    margin: auto;
-    width: 640px;
-    height: 45px;
-    border: 3px red solid;
-}
+/* Навигационное меню - Общее положение */
 
 header
 {
-    border: 2px solid black;
+    border: 2px solid purple;
+    min-height: 100%;
 }

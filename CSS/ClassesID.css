@@ -40,19 +40,27 @@
     height: 210px;
     height: auto;
     max-width: 100%;
-    box-sizing: border-box; /* Свойства width и height включают в себя значения полей и границ, но не отступов*/
-    
+     /* Свойства width и height включают в себя значения полей и границ, но не отступов*/
+    box-sizing: border-box; 
 }
+
+
+                                /* ---------------- Выпадающее меню ---------------- */
+
 
 .topnav
 {
+    margin: auto;
+    width: 640px;
+    height: 45px;
+    margin-top: 5px;
+    
     background-color: none;
     font-size: 15px;
     margin-top: 10px;
-    /*border: 2px solid green;*/
 }
 
-.topnav a /* Настройка ссылок, вложенных в topnav */
+.topnav a 
 {
     color: black;
     text-align: center;
@@ -60,25 +68,112 @@
     font-size: 17px;
 }
 
-.topnav a.icon_sword:hover:before 
-{
-    content: url(../Pictures/Svg/Swords.svg);
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    position: inherit;
-}
-
-.topnav a.icon_sword:hover:after
-{
-    content: url(../Pictures/Svg/Swords.svg);
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-}
-
-.topnav .icon /* Настройка иконки меню */
+.topnav .icon
 {
     display: none;
+}
+
+
+.nav
+{
+	float: left;
+	min-width: 100%;
+	list-style: none;
+	font-weight: bold;
+    
+	margin: 0px auto;
+    padding-left: 75px;
+   
+}
+
+.nav li
+{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	display: block;
+}
+
+.nav li a
+{
+	display: block;
+	padding: 8px;
+	color: #fff;
+	background: #333;
+	text-decoration: none;
+	
+    /* Тень текста, ведь это красиво*/
+	text-shadow:1px 1px 1px rgba(0,0,0,0.75); 
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+
+.nav li a:hover
+{
+	color: #fff;
+	background: #6b0c36;
+	background: rgba(107,12,54,0.75);
+	text-decoration: underline;
+}
+
+
+
+.nav ul
+{
+	list-style: none;
+	position: absolute;
+    /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	left: -9999px;
+    /* Устнавливаем начальное состояние прозрачности */
+	opacity: 0; 
+    /* В Webkit выпадающие пункты будут проявляться */
+	-webkit-transition:0.25s linear opacity;
+    -moz-transition:0.25s linear opacity;
+}
+
+.nav ul li
+{
+    /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	padding-top: 1px; 
+	float: none;
+}
+
+.nav ul a
+{
+    /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	white-space: nowrap; 
+	display: block;
+}
+
+.nav li:hover ul
+{ 
+	left: 0; 
+	opacity: 1; 
+}
+
+.nav li:hover a
+{ 
+    /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	background:#6b0c36;
+    /* Выглядит полупрозрачным */
+	background:rgba(107,12,54,0.75); 
+	text-decoration: underline;
+}
+
+.nav li:hover ul a
+{ 
+    /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+}
+
+.nav li:hover ul li a:hover
+{ 
+    /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	background: #333;
+	background: rgba(51,51,51,0.75); 
+	text-decoration: underline;
+	-moz-transform: scale(1.09);
+	-webkit-transform: scale(1.09);
 }
