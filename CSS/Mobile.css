@@ -77,26 +77,4 @@
         margin: 0px auto;
         position: relative;
     }
-    
-    ul.submenu li > a:hover:after
-    {
-        content: url(/DOJ745.github.io/Pictures/Svg/Swords.svg);
-        display: flex;
-        flex: 1;
-        float: right;
-        width: 15px;
-        height: 15px;
-        position: relative;
-    }
-    
-    ul.submenu li > a:hover:before
-    {
-        content: url(/DOJ745.github.io/Pictures/Svg/Swords.svg);
-        display: flex;
-        flex: 1;
-        float: left;
-        width: 15px;
-        height: 15px;
-        position: relative;
-    }
 }

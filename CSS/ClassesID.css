@@ -70,7 +70,9 @@
 }
 
 
-                                /* ---------------- Выпадающее меню ---------------- */
+
+ 
+/* ---------------- Выпадающее меню ---------------- */
 
 
 .topnav
@@ -104,8 +106,6 @@
 	float: left;
 	min-width: 100%;
 	list-style: none;
-	font-weight: bold;
-    
 	margin: 0px auto;
     padding-left: 75px;
    
@@ -124,24 +124,19 @@
 	display: block;
 	padding: 8px;
 	color: #fff;
-	background: #333;
+	background: black;
 	text-decoration: none;
 	
     /* Тень текста, ведь это красиво*/
 	text-shadow:1px 1px 1px rgba(0,0,0,0.75); 
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	border-radius:2px;
 }
 
 .nav li a:hover
 {
 	color: #fff;
-	background: #6b0c36;
-	background: rgba(107,12,54,0.75);
+	background: black;
 	text-decoration: underline;
 }
-
 
 
 .nav ul
@@ -153,14 +148,14 @@
     /* Устнавливаем начальное состояние прозрачности */
 	opacity: 0; 
     /* В Webkit выпадающие пункты будут проявляться */
-	-webkit-transition:0.25s linear opacity;
-    -moz-transition:0.25s linear opacity;
+	-webkit-transition: 0.366s linear opacity;
+    -moz-transition: 0.366s linear opacity;
 }
 
 .nav ul li
 {
     /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
-	padding-top: 1px; 
+	padding-top: 3px; 
 	float: none;
 }
 
@@ -177,28 +172,133 @@
 	opacity: 1; 
 }
 
+/* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+
 .nav li:hover a
 { 
-    /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	background:#6b0c36;
-    /* Выглядит полупрозрачным */
-	background:rgba(107,12,54,0.75); 
+	background: black;
 	text-decoration: underline;
 }
+
+/* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
 
 .nav li:hover ul a
 { 
-    /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
-	text-decoration:none;
-	-webkit-transition:-webkit-transform 0.075s linear;
+	text-decoration: none;
+	-webkit-transition: -webkit-transform 0.155s linear;
+    -moz-transition: -moz-transform 0.155s linear;
 }
+
+/* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
 
 .nav li:hover ul li a:hover
 { 
-    /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
-	background: #333;
-	background: rgba(51,51,51,0.75); 
+	background: #dfc66c;
 	text-decoration: underline;
-	-moz-transform: scale(1.09);
-	-webkit-transform: scale(1.09);
+	-moz-transform: scale(1.12);
+	-webkit-transform: scale(1.12);
+}
+
+            /* ------------ Иконки для подпунктов ------------ */
+
+    /* Мечи */
+
+ul.submenu li.icon_sword > a:hover:after
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Swords.svg);
+    display: flex;
+    flex: 1;
+    float: right;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+    
+ul.submenu li.icon_sword > a:hover:before
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Swords.svg);
+    display: flex;
+    flex: 1;
+    float: left;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+
+    /* Топоры */
+
+
+ul.submenu li.icon_axe > a:hover:after
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Axes.svg);
+    display: flex;
+    flex: 1;
+    float: right;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+ul.submenu li.icon_axe > a:hover:before
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Axes.svg);
+    display: flex;
+    flex: 1;
+    float: left;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+
+    /* Древковое */
+
+
+ul.submenu li.icon_wooden > a:hover:after
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/wooden1010.svg);
+    display: flex;
+    flex: 1;
+    float: right;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ul.submenu li.icon_wooden > a:hover:before
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/wooden1010.svg);
+    display: flex;
+    flex: 1;
+    float: left;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+
+    /* Уникальное */
+
+
+ul.submenu li.icon_unique > a:hover:after
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Unique.svg);
+    display: flex;
+    flex: 1;
+    float: right;
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+ul.submenu li.icon_unique > a:hover:before
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Unique.svg);
+    display: flex;
+    flex: 1;
+    float: left;
+    width: 15px;
+    height: 15px;
+    position: relative;
 }
