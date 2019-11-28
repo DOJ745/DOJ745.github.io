@@ -7,13 +7,13 @@
     padding: 5px;
 }
 
+/* "Пролистыватель" - header + content + nav и т.д */
 
-#wrapper /* "Пролистыватель" - header + content + nav и т.д */
+#wrapper 
 {
     min-height: 100%;
     margin: 0 auto;
     flex-direction: column;
-    
     flex-grow: 1;
 }
 
@@ -44,20 +44,26 @@
     text-align: center;
 }
 
-.logo /* Настраиваем блок, в котором будет логотип */
+/* Настраиваем блок, в котором будет логотип */
+
+.logo 
 {
     display: flex;
     justify-content: center;
 }
 
-.graficlogo /* Настраиваем сам логоип */
+/* Настраиваем сам логоип */
+
+.graficlogo 
 {
     padding: 5px;
     width: 210px;
     height: 210px;
     height: auto;
     max-width: 100%;
-     /* Свойства width и height включают в себя значения полей и границ, но не отступов*/
+    
+    /* Свойства width и height включают в себя значения полей и границ, но не отступов*/
+    
     box-sizing: border-box; 
 }
 
@@ -75,6 +81,7 @@
 /* ---------------- Выпадающее меню ---------------- */
 
 
+/* Главная часть выпадающего меню */
 .topnav
 {
     margin: auto;
@@ -101,6 +108,8 @@
 }
 
 
+/* Работа со списками, ведь ссылка, которая содержит множество ссылок - список */
+
 .nav
 {
 	float: left;
@@ -126,9 +135,6 @@
 	color: #fff;
 	background: black;
 	text-decoration: none;
-	
-    /* Тень текста, ведь это красиво*/
-	text-shadow:1px 1px 1px rgba(0,0,0,0.75); 
 }
 
 .nav li a:hover
@@ -143,18 +149,23 @@
 {
 	list-style: none;
 	position: absolute;
-    /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-	left: -9999px;
-    /* Устнавливаем начальное состояние прозрачности */
+    
+    /* По умолчанию скрываем */
+    /* left сугубо для разнообразия */
+    left: -9999px;
 	opacity: 0; 
-    /* В Webkit выпадающие пункты будут проявляться */
-	-webkit-transition: 0.316s linear opacity;
-    -moz-transition: 0.316s linear opacity;
+    
+    /*  Как быстро выводится подменю */
+    
+	-webkit-transition: 0.266s linear opacity;
+    -moz-transition: 0.266s linear opacity;
 }
+
+/* Вводим отступ между li, чтобы не слипались элементы подменю */
 
 .nav ul li
 {
-    /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+    
 	padding-top: 3px; 
 	float: none;
 }
@@ -162,6 +173,8 @@
 .nav ul a
 {
     /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    /* Чтобы не появился адский пролистыватель */
+    
 	white-space: nowrap;
 	display: block;
 }
@@ -185,11 +198,14 @@
 .nav li:hover ul a
 { 
 	text-decoration: none;
-	-webkit-transition: -webkit-transform 0.175s linear;
-    -moz-transition: -moz-transform 0.175s linear;
+    
+    /* Как быстро увеличивается размер пункта подменю*/
+    
+	-webkit-transition: -webkit-transform 0.166s linear;
+    -moz-transition: -moz-transform 0.166s linear;
 }
 
-/* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+/* Устанавливаем стили для выпадающих пунктов при наведении курсора*/
 
 .nav li:hover ul li a:hover
 { 
@@ -283,6 +299,8 @@ ul.submenu li.icon_unique > a:hover:after
     padding-bottom: 5px;
     padding-left: 38px
 }
+
+    /* Категории доспехов */
 
 ul.submenu li.icon_armor > a:hover:after
 {
