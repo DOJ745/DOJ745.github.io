@@ -8,15 +8,7 @@
     <WeaponMainPage>
         
         <SworsdMainPage>
-            
-            <PicturesList>
-                <Picture path = "" border = ""></Picture>
-                <Picture path = "" border = ""></Picture>
-            </PicturesList>
-            
-            <text>
-            </text>
-            
+
             <Longsword>
                 <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "test_border">LONGSWORD1</Picture1>
                 <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border">LONGSWORD2</Picture2>
