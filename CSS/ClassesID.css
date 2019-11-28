@@ -148,8 +148,8 @@
     /* Устнавливаем начальное состояние прозрачности */
 	opacity: 0; 
     /* В Webkit выпадающие пункты будут проявляться */
-	-webkit-transition: 0.366s linear opacity;
-    -moz-transition: 0.366s linear opacity;
+	-webkit-transition: 0.316s linear opacity;
+    -moz-transition: 0.316s linear opacity;
 }
 
 .nav ul li
@@ -162,7 +162,7 @@
 .nav ul a
 {
     /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
-	white-space: nowrap; 
+	white-space: nowrap;
 	display: block;
 }
 
@@ -185,8 +185,8 @@
 .nav li:hover ul a
 { 
 	text-decoration: none;
-	-webkit-transition: -webkit-transform 0.155s linear;
-    -moz-transition: -moz-transform 0.155s linear;
+	-webkit-transition: -webkit-transform 0.175s linear;
+    -moz-transition: -moz-transform 0.175s linear;
 }
 
 /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
@@ -195,8 +195,8 @@
 { 
 	background: #dfc66c;
 	text-decoration: underline;
-	-moz-transform: scale(1.12);
-	-webkit-transform: scale(1.12);
+	-moz-transform: scale(1.10);
+	-webkit-transform: scale(1.10);
 }
 
             /* ------------ Иконки для подпунктов ------------ */
@@ -257,48 +257,43 @@ ul.submenu li.icon_axe > a:hover:before
 
 ul.submenu li.icon_wooden > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/wooden1010.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Wooden%20weapons3.svg);
     display: flex;
     flex: 1;
-    float: right;
-    width: 100%;
-    height: 100%;
+    width: 28px;
+    height: 28px;
     position: relative;
+    
+    padding-bottom: 5px;
+    padding-left: 38px
 }
-
-ul.submenu li.icon_wooden > a:hover:before
-{
-    content: url(/DOJ745.github.io/Pictures/Svg/wooden1010.svg);
-    display: flex;
-    flex: 1;
-    float: left;
-    width: 15px;
-    height: 15px;
-    position: relative;
-}
-
 
     /* Уникальное */
 
 
 ul.submenu li.icon_unique > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/Unique.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Unique2.svg);
     display: flex;
     flex: 1;
-    float: right;
-    width: 15px;
-    height: 15px;
+    width: 28px;
+    height: 28px;
     position: relative;
+    
+    padding-bottom: 5px;
+    padding-left: 38px
 }
 
-ul.submenu li.icon_unique > a:hover:before
+ul.submenu li.icon_armor > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/Unique.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Armor2.svg);
     display: flex;
     flex: 1;
-    float: left;
-    width: 15px;
-    height: 15px;
+    width: 31px;
+    height: 31px;
     position: relative;
+    
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 85px;
 }
