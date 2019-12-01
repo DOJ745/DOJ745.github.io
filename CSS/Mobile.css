@@ -41,7 +41,8 @@
     }
     
     
-    /* Выпадающее меню */
+                /* ----- Выпадающее меню ------ */
+    
     .topnav
     {
         width: auto;
@@ -51,11 +52,9 @@
     {
         min-width: 100%;
         min-height: 100%;
-        
         display: flex;
         flex-flow: column;
         flex: 1;
-        
         padding: 0;
     }
     
@@ -76,5 +75,10 @@
         flex-direction: column;
         margin: 0px auto;
         position: relative;
+    }
+    
+    #Crumbs
+    {
+        min-width: 100%;
     }
 }

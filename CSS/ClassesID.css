@@ -78,10 +78,11 @@
 
 
  
-/* ---------------- Выпадающее меню ---------------- */
+            /* ---------------- Выпадающее меню ---------------- */
 
 
 /* Главная часть выпадающего меню */
+
 .topnav
 {
     margin: auto;
@@ -157,8 +158,8 @@
     
     /*  Как быстро выводится подменю */
     
-	-webkit-transition: 0.266s linear opacity;
-    -moz-transition: 0.266s linear opacity;
+	-webkit-transition: opacity 0.266s ease-in;
+    -moz-transition: opacity 0.266s ease-in;
 }
 
 /* Вводим отступ между li, чтобы не слипались элементы подменю */
@@ -166,7 +167,7 @@
 .nav ul li
 {
     
-	padding-top: 3px; 
+	padding-top: 2px; 
 	float: none;
 }
 
@@ -201,8 +202,8 @@
     
     /* Как быстро увеличивается размер пункта подменю*/
     
-	-webkit-transition: -webkit-transform 0.166s linear;
-    -moz-transition: -moz-transform 0.166s linear;
+	-webkit-transition: -webkit-transform 0.266s ease;
+    -moz-transition: -moz-transform 0.266s ease;
 }
 
 /* Устанавливаем стили для выпадающих пунктов при наведении курсора*/
@@ -307,11 +308,11 @@ ul.submenu li.icon_armor > a:hover:after
     content: url(/DOJ745.github.io/Pictures/Svg/Armor2.svg);
     display: flex;
     flex: 1;
-    width: 31px;
-    height: 31px;
+    width: 29px;
+    height: 29px;
     position: relative;
     
-    padding-top: 3px;
+    padding-top: 1px;
     padding-bottom: 2px;
     padding-left: 85px;
 }

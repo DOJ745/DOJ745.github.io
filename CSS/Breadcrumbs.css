@@ -11,18 +11,17 @@ ul
 
 #Crumbs
 {
- background: brown;
+ background: #913b1f;
  border-width: 1px;
  border-style: solid;
- border-color: black rgb(193, 91, 91) #b23737;
- border-radius: 5px;
- box-shadow: 0 0 2px rgba(0,0,0,.2);
     
  overflow: hidden;
  -moz-scrollbars-none;    
  width: 640px;
- height: 35px;
- margin: auto;
+ height: 40px;
+ margin: 0 auto;
+ margin-top: 15px;
+ margin-bottom: 15px;
 }
  
 #Crumbs li
@@ -35,29 +34,29 @@ ul
  padding: .7em 1em .7em 2em;
  float: left;
  text-decoration: none;
- color: #444;
+ color: white;
  position: relative;
- text-shadow: 0 1px 0 rgba(255,255,255,.5);
- background-color: #ddd;
- background-image: linear-gradient(to right, #BF6D30, #FFD073);
+ /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+ background-color: #dfc66c;
+ /*background-image: linear-gradient(to right, #BF6D30, #FFD073);*/
 }
  
 #Crumbs li:first-child a
 {
  padding-left: 1em;
- border-radius: 5px 0 0 5px;
+/* border-radius: 4px 0 0 4px;*/
 }
  
 #Crumbs a:hover
 {
- background: #fff;
+ background: #dfc66c;
 }
  
 #Crumbs a::after, #Crumbs a::before
 {
  content: "";
  position: absolute;
- top: 50%;
+ top: 47%;
  margin-top: -1.5em;
  border-top: 1.5em solid transparent;
  border-bottom: 1.5em solid transparent;
@@ -67,8 +66,8 @@ ul
  
 #Crumbs a::after
 {
- z-index: 2;
- border-left-color: #FFD073;
+ z-index: 1;
+ border-left-color: #913b1f;
 }
  
 #Crumbs a::before
