@@ -4,15 +4,17 @@
 
         /* 2) С сайта http://beloweb.ru/wp/krasivyie-hlebnyie-kroshki-breadcrumbs-dlya-obyichnogo-sayta-i-dlya-blogov-wordpress-na-css3.html*/
 
-ul
+/*ul
 {
  list-style: none;
-}
+}*/
+
+/*
 
 #Crumbs
 {
+ position: relative;
  background: #913b1f;
- border-width: 1px;
  border-style: solid;
     
  overflow: hidden;
@@ -36,15 +38,12 @@ ul
  text-decoration: none;
  color: white;
  position: relative;
- /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
  background-color: #dfc66c;
- /*background-image: linear-gradient(to right, #BF6D30, #FFD073);*/
 }
  
 #Crumbs li:first-child a
 {
  padding-left: 1em;
-/* border-radius: 4px 0 0 4px;*/
 }
  
 #Crumbs a:hover
@@ -62,9 +61,9 @@ ul
  border-bottom: 1.5em solid transparent;
  border-left: 1em solid;
  right: -1em;
-}
+} 
  
-#Crumbs a::after
+ #Crumbs a::after
 {
  z-index: 1;
  border-left-color: #913b1f;
@@ -91,4 +90,132 @@ ul
 #Crumbs .current::after,#Crumbs .current::before
 {
  content: normal;
+} 
+*/
+
+/*#Crumbs
+{
+ display: flex;
+ flex-direction: row;
+    
+ overflow: hidden;
+ position: relative;
+    
+ background: #913b1f;
+ border-style: solid;
+ width: 640px;
+ height: 40px;
+    
+ margin: 0 auto;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+
+#Crumbs .current
+{
+    font-style: bold;
+    color: white;
+    border: 2px green solid;
+    padding: 7px 25px 2px;
+}
+
+#Crumbs .current:after
+{
+    content: '\2192'; 
+    color: black;
+    margin-left: 20px;
+}
+
+#Crumbs .elem
+{
+    border: 2px blue solid;
+    padding: 7px 25px 25px;
+}
+
+#Crumbs .elem:after
+{
+    content: '\2192'; 
+    color: black;
+    margin-left: 15px;
+}
+
+#Crumbs a
+{
+    text-decoration: none;
+    color: black;
+}*/
+
+.breadcrumbs 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    width: 650px;
+    height: 40px;
+    color: black;
+    /*margin-bottom: 12px;*/
+    counter-reset: flag;
+    text-align: center;
+}
+
+.breadcrumbs a 
+{
+    text-decoration: none;
+    position: relative;
+    float: left;
+    padding-left: 50px;
+    padding-right: 17px;
+    text-decoration: none;
+    line-height: 36px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.266s;
+}
+
+.breadcrumbs a:after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    background-color: red;
+    border-radius: 50px 0 0 0;
+    box-shadow: 0px 1px 0 2px #dddddd;
+    transform: rotate(-45deg) scale(0.78);
+    transition: background-color 0.133s;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover::after,
+.breadcrumbs a.active,
+.breadcrumbs a.active::after 
+{
+    background-color: #913b1f;
+}
+
+.breadcrumbs a::before 
+{
+    content: counter(flag);
+    position: absolute;
+    top: 8px;
+    left: 27px;
+    width: 21px;
+    height: 21px;
+    line-height: 20px;
+    background-color: #913b1f;
+    border-radius: 50%;
+    counter-increment: flag;
+}
+
+.breadcrumbs a:first-child 
+{
+    padding-left: 45px;
+}
+
+.breadcrumbs a:first-child::before 
+{
+    left: 13px;
 }
