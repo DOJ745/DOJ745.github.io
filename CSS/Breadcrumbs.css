@@ -1,159 +1,15 @@
-            /* 1) Хлебные крошки брал с сайта http://bologer.ru/kak-sdelat-xlebnye-kroshki-na-sajte-s-pomoshhyu-css/ */
-
-/*Пока что убрал, много места занимали*/
-
-        /* 2) С сайта http://beloweb.ru/wp/krasivyie-hlebnyie-kroshki-breadcrumbs-dlya-obyichnogo-sayta-i-dlya-blogov-wordpress-na-css3.html*/
-
-/*ul
-{
- list-style: none;
-}*/
-
-/*
-
-#Crumbs
-{
- position: relative;
- background: #913b1f;
- border-style: solid;
-    
- overflow: hidden;
- -moz-scrollbars-none;    
- width: 640px;
- height: 40px;
- margin: 0 auto;
- margin-top: 15px;
- margin-bottom: 15px;
-}
- 
-#Crumbs li
-{
- float: left;
-}
- 
-#Crumbs a
-{
- padding: .7em 1em .7em 2em;
- float: left;
- text-decoration: none;
- color: white;
- position: relative;
- background-color: #dfc66c;
-}
- 
-#Crumbs li:first-child a
-{
- padding-left: 1em;
-}
- 
-#Crumbs a:hover
-{
- background: #dfc66c;
-}
- 
-#Crumbs a::after, #Crumbs a::before
-{
- content: "";
- position: absolute;
- top: 47%;
- margin-top: -1.5em;
- border-top: 1.5em solid transparent;
- border-bottom: 1.5em solid transparent;
- border-left: 1em solid;
- right: -1em;
-} 
- 
- #Crumbs a::after
-{
- z-index: 1;
- border-left-color: #913b1f;
-}
- 
-#Crumbs a::before
-{
- border-left-color: #BF6D30;
- right: -1.1em;
- z-index: 1;
-}
- 
-#Crumbs a:hover::after
-{
- border-left-color: #fff;
-}
- 
-#Crumbs .current, #Crumbs .current:hover
-{
- font-weight: bold;
- background: none;
-}
- 
-#Crumbs .current::after,#Crumbs .current::before
-{
- content: normal;
-} 
-*/
-
-/*#Crumbs
-{
- display: flex;
- flex-direction: row;
-    
- overflow: hidden;
- position: relative;
-    
- background: #913b1f;
- border-style: solid;
- width: 640px;
- height: 40px;
-    
- margin: 0 auto;
- margin-top: 15px;
- margin-bottom: 15px;
-}
-
-#Crumbs .current
-{
-    font-style: bold;
-    color: white;
-    border: 2px green solid;
-    padding: 7px 25px 2px;
-}
-
-#Crumbs .current:after
-{
-    content: '\2192'; 
-    color: black;
-    margin-left: 20px;
-}
-
-#Crumbs .elem
-{
-    border: 2px blue solid;
-    padding: 7px 25px 25px;
-}
-
-#Crumbs .elem:after
-{
-    content: '\2192'; 
-    color: black;
-    margin-left: 15px;
-}
-
-#Crumbs a
-{
-    text-decoration: none;
-    color: black;
-}*/
-
 .breadcrumbs 
 {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    
     margin: 0px auto;
     width: 650px;
     height: 40px;
     color: black;
-    /*margin-bottom: 12px;*/
+    margin-bottom: 11px;
     counter-reset: flag;
     text-align: center;
 }
@@ -164,9 +20,8 @@
     position: relative;
     float: left;
     padding-left: 50px;
-    padding-right: 17px;
-    text-decoration: none;
-    line-height: 36px;
+    padding-right: 16px;
+    line-height: 37px;
     color: white;
     background-color: black;
     transition: background-color 0.266s;
@@ -179,13 +34,14 @@
     top: 0;
     right: -18px;
     z-index: 1;
-    width: 36px;
-    height: 36px;
-    background-color: red;
-    border-radius: 50px 0 0 0;
-    box-shadow: 0px 1px 0 2px #dddddd;
-    transform: rotate(-45deg) scale(0.78);
-    transition: background-color 0.133s;
+    width: 39px;
+    height: 40px;
+    background-color: #913b1f;
+    border-radius: 60px 0 0 0;
+    transform: rotate(-45deg) scale(0.72);
+    
+    /* Скорость изменения цвета */
+    transition: background-color 0.233s;
 }
 
 .breadcrumbs a:hover,
@@ -200,7 +56,7 @@
 {
     content: counter(flag);
     position: absolute;
-    top: 8px;
+    top: 9px;
     left: 27px;
     width: 21px;
     height: 21px;
