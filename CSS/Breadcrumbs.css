@@ -2,14 +2,14 @@
 {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    flex 1;
+    margin: 0px auto;
     position: relative;
     
-    margin: 0px auto;
-    width: 650px;
+    width: 550px;
     height: 40px;
     color: black;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     counter-reset: flag;
     text-align: center;
 }
@@ -24,7 +24,7 @@
     line-height: 37px;
     color: white;
     background-color: black;
-    transition: background-color 0.266s;
+    transition: background-color 0.366s;
 }
 
 .breadcrumbs a:after 
@@ -40,8 +40,15 @@
     border-radius: 60px 0 0 0;
     transform: rotate(-45deg) scale(0.72);
     
-    /* Скорость изменения цвета */
     transition: background-color 0.233s;
+}
+
+.breadcrumbs a:last-child:after
+{
+    height: 40px;
+    width: 40px;
+     transform: rotate(-45deg) scale(0.76);
+    border-radius: 50px 0px 0px 0px;
 }
 
 .breadcrumbs a:hover,
