@@ -1,84 +1,43 @@
 .breadcrumbs 
 {
     display: flex;
-    flex-direction: row;
-    flex 1;
-    margin: 0px auto;
     position: relative;
+    margin: 0px auto;
     
-    width: 550px;
+    width: 630px;
     height: 40px;
     color: black;
-    margin-bottom: 10px;
-    counter-reset: flag;
-    text-align: center;
 }
 
 .breadcrumbs a 
 {
+    /*display: flex;*/
+    margin: 0px auto;
     text-decoration: none;
     position: relative;
-    float: left;
-    padding-left: 50px;
-    padding-right: 16px;
-    line-height: 37px;
     color: white;
     background-color: black;
+    padding-top: 7px;
+    padding-right: 25px;
     transition: background-color 0.366s;
 }
 
-.breadcrumbs a:after 
+.breadcrumbs a:before
 {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -18px;
-    z-index: 1;
-    width: 39px;
-    height: 40px;
-    background-color: #913b1f;
-    border-radius: 60px 0 0 0;
-    transform: rotate(-45deg) scale(0.72);
-    
-    transition: background-color 0.233s;
+    content: url(/DOJ745.github.io/Pictures/Svg/archer.svg);
+    position: relative;
+    display: flex;
+    flex: 1;
+    width: 25px;
+    float: left;
+    transition: background-color 0.133s;
+    margin-right: 9px;
+    margin-left: 9px;
 }
 
-.breadcrumbs a:last-child:after
-{
-    height: 40px;
-    width: 40px;
-     transform: rotate(-45deg) scale(0.76);
-    border-radius: 50px 0px 0px 0px;
-}
 
 .breadcrumbs a:hover,
-.breadcrumbs a:hover::after,
-.breadcrumbs a.active,
-.breadcrumbs a.active::after 
+.breadcrumbs a.active
 {
     background-color: #913b1f;
-}
-
-.breadcrumbs a::before 
-{
-    content: counter(flag);
-    position: absolute;
-    top: 9px;
-    left: 27px;
-    width: 21px;
-    height: 21px;
-    line-height: 20px;
-    background-color: #913b1f;
-    border-radius: 50%;
-    counter-increment: flag;
-}
-
-.breadcrumbs a:first-child 
-{
-    padding-left: 45px;
-}
-
-.breadcrumbs a:first-child::before 
-{
-    left: 13px;
 }
