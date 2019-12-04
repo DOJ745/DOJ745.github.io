@@ -28,9 +28,9 @@ for(let i = 0; i < pictures.length; i++)
 
 var img_arr = document.getElementsByTagName("img");
 
-for(let i = 0; i < pictures.length; i++)
+for(let i = 1; i < pictures.length; i++)
 {
-    if(img_arr[i].className === "graficlogo")
+    /*if(img_arr[i].className === "graficlogo")
     {
           i = i + 1;
     }
@@ -38,10 +38,9 @@ for(let i = 0; i < pictures.length; i++)
     {
         i = pictures.length + 1;
     }
-    else
-    {
+    else {}*/
         img_arr[i].setAttribute("src", path_attrs[i]);
         img_arr[i].setAttribute("class", border_attr);
-    }
+    
     
 }
