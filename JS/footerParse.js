@@ -25,3 +25,11 @@ for(let i = 0; i < footer_parse_p.length; i++)
 {
     footer_parse_p[i].innerHTML = footer_text[i].innerHTML;    
 }
+
+var footer_t = footerInfo[0].getElementsByTagName("t");
+var footer_td = document.getElementsByTagName("td");
+
+for(let i = 0; i < footer_t.length; i++)
+{
+    footer_td[i].innerHTML = footer_t[i].innerHTML;
+}
