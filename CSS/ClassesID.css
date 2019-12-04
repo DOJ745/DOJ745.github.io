@@ -104,11 +104,10 @@
 }
 
 
-img.border
+.border
 {
     width: 200px;
     height: 170px;
-    /*float: left;*/
     position: relative;
     
     border: 27px solid ;
