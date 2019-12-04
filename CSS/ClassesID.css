@@ -45,6 +45,11 @@
     text-align: center;
 }
 
+p#parse
+{
+    position: relative;
+    margin: 25% auto;
+}
 
 /* Настраиваем блок, в котором будет логотип */
 
