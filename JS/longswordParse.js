@@ -19,7 +19,6 @@ var longswordInfo = doc.getElementsByTagName("Longsword");
 var pictures = longswordInfo[0].getElementsByTagName("Picture");
 
 var border_attr = pictures[0].getAttribute("border");
-
 var path_attrs = new Array();
 
 for(let i = 0; i < pictures.length; i++)
@@ -29,15 +28,20 @@ for(let i = 0; i < pictures.length; i++)
 
 var img_arr = document.getElementsByTagName("img");
 
-for(let i = 0; i < img_arr.length; i++)
+for(let i = 0; i < pictures.length; i++)
 {
-    if(img_arr[i].className === "foot_img" || img_arr[i].className === "graficlogo")
+    if(img_arr[i].className === "graficlogo")
     {
-          i = i + 1;  
+          i = i + 1;
+    }
+    else if(img_arr[i].className === "foot_img")
+    {
+        i = pictures.length + 1;
     }
     else
     {
         img_arr[i].setAttribute("src", path_attrs[i]);
         img_arr[i].setAttribute("class", border_attr);
     }
+    
 }
