@@ -33,6 +33,7 @@ for(let i = 0; i < pictures.length; i++)
     if(img_arr[0].className === "graficlogo")
     {
           img_arr[i + 1].setAttribute("src", path_attrs[i]);
+          img_arr[i + 1].setAttribute("class", border_attr);
     }
     else if(img_arr[i].className === "foot_img")
     {
