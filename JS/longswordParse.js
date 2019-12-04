@@ -30,10 +30,7 @@ for(let i = 0; i < pictures.length; i++)
 var p_arr = document.getElementsByTagName("p");
 for(let i = 0; i < text_parse.length; i++)
 {
-    if(p_arr[i].className === "parse")
-    {
-        p_arr[i].innerHTML = text_parse[i].innerHTML;
-    }
+    p_arr[i].innerHTML = text_parse[i].innerHTML;
 }
     
 var img_arr = document.getElementsByTagName("img");
