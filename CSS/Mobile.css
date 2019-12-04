@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 768px)
 {
+    /* ------------- Навигационное меню -------------*/
     .topnav li:not(:first-child)
     {
         display: none;
@@ -38,6 +39,14 @@
         text-align: left;
         position: relative;
         width: auto;
+    }
+    
+    /* -------- Размеры картинок --------*/
+    
+    .border
+    {
+        width: 120px;
+        height: 100px;
     }
     
     
@@ -78,7 +87,7 @@
     }
     
     
-        /*-------- Хлебные крошки ----------- */
+            /*-------- Хлебные крошки ----------- */
     
     .breadcrumbs
     {
