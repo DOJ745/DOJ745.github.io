@@ -28,7 +28,7 @@ for(let i = 0; i < pictures.length; i++)
 }
 
 var p_arr = document.getElementsByTagName("p");
-for(let i = 0; i < p_arr.length; i++)
+for(let i = 0; i < text_parse.length; i++)
 {
     p_arr[i].innerHTML = text_parse[i].innerHTML;
 }
