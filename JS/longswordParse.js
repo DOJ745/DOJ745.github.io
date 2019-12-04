@@ -24,22 +24,20 @@ var path_attrs = new Array();
 
 for(let i = 0; i < pictures.length; i++)
 {
-    var path_attrs.push(pictures[i].getAttribute("path"));
-    // var path_attr2 = pictures[0].getAttribute("path");
+    path_attrs.push(pictures[i].getAttribute("path"));
 }
 
 var img_arr = document.getElementsByTagName("img");
 
 for(let i = 0; i < img_arr.length; i++)
 {
-    img_arr[i].setAttribute("src", path_attrs[i]);
-    img_arr[i].setAttribute("class", border_attr);
+    if(img_arr[i].className === "foot_img" || img_arr[i].className === "graficlogo")
+    {
+          i = i + 1;  
+    }
+    else
+    {
+        img_arr[i].setAttribute("src", path_attrs[i]);
+        img_arr[i].setAttribute("class", border_attr);
+    }
 }
-
-/*img_arr[1].setAttribute("src", path_attr1);
-img_arr[1].setAttribute("class", class_attr);
-img_arr[1].setAttribute("alt", picture1[0].innerHTML)
-
-img_arr[2].setAttribute("src", path_attr2);
-img_arr[2].setAttribute("class", class_attr);
-img_arr[2].setAttribute("alt", picture2[0].innerHTML)*/
