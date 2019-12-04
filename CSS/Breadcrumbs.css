@@ -3,16 +3,13 @@
     display: flex;
     position: relative;
     margin: 0px auto;
-    
-    width: 630px;
-    height: 40px;
+    justify-content: center;
+    height: 100%;
     color: black;
 }
 
 .breadcrumbs a 
 {
-    /*display: flex;*/
-    margin: 0px auto;
     text-decoration: none;
     position: relative;
     color: white;
