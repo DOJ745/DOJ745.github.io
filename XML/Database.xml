@@ -14,8 +14,9 @@
         <SworsdMainPage>
 
             <Longsword>
-                <Picture1 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "test_border">LONGSWORD1</Picture1>
-                <Picture2 path = "/DOJ745.github.io/Pictures/Weapon/Swords/Sword.png" border = "test_border">LONGSWORD2</Picture2>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "">LONGSWORD1</Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword2.png" border = "">LONGSWORD2</Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword3.jpg" border = "">LONGSWORD1</Picture>
                 <text></text>
             </Longsword>
             

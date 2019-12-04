@@ -8,11 +8,11 @@
         
                 <!-- Загружаемые стили -->
         
-        <link rel = "stylesheet" href = "CSS/Visual.css">
-        <link rel = "stylesheet" href = "CSS/ClassesID.css">
-        <link rel = "stylesheet" href = "CSS/Mobile.css">
-        <link rel = "stylesheet" href =  "CSS/Test.css">
-        <link rel = "stylesheet" href = "CSS/Breadcrumbs.css">
+        <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Visual.css">
+        <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/ClassesID.css">
+        <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Mobile.css">
+        <link rel = "stylesheet" href =  "/DOJ745.github.io/CSS/Test.css">
+        <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Breadcrumbs.css">
 		
 	</head>
 	
@@ -23,28 +23,46 @@
             <header>
                 
                 <div class = "logo">
-                    <img class = "graficlogo" src = "Pictures/new%20logo.png" alt = "LOGO" >
+                    <img class = "graficlogo" src = "/DOJ745.github.io/Pictures/logo.png" alt = "LOGO" >
                 </div>
                 
                 <h1 class = "site_name"> Оружие и доспехи средневековья </h1>
                 
-                <nav class = "test_border">
-                    <div class = "topnav" id = "myTopnav">
+                 <div class = "breadcrumbs">
+                    <a href = "/DOJ745.github.io/index.html">Главная</a>
+                    <a class = "active">Доспехи</a>
+                </div>
+                
+               <nav class = "topnav" id = "myTopnav">
+                <ul class = "nav">
                         
-                        <A href = "#" class = "icon_sword"> Главная </A>
-                        <A href = "Pages/Weapon/longsword_index.html" class = "icon_sword" id = "Weapon"> Оружие </A>
-                        <A href = "#" class = "icon_sword" id = "Armor"> Доспехи </A>
-                        <A href = "Pages/about_index.html" class = "icon_sword"> О сайте </A>
-                        <A href = "Pages/contacts_index.html" class = "icon_sword" id = "Contact"> Контакты </A>
-                        <A id = "menu" class = "icon" href = "#">&#9776;</A>
-                        
-                    </div>
+                        <li> <A href = "#"> Главная </A> </li>
+                            
+                        <li> <A href = "#" id = "Weapon"> Оружие </A>
+                            
+                                <ul class = "submenu">
+			                 <li class = "icon_sword"><a href = "Pages/Weapon/longsword_index.html" title = "Это цирюльник Рогель">Мечи</a></li>
+			                 <li class = "icon_axe"><a href = "#" title = "Помогите">Топоры</a></li>
+			                 <li class = "icon_wooden"><a href = "#" title = "Наш глава не платит нам вообще">Древковое</a></li>
+                             <li class = "icon_unique"><a href = "#" title = "Он идёт сюда!">Уникальное</a></li>
+			                     </ul>
+                        </li>
+                            
+                        <li> <A href = "Pages/Armor/ArmorMainpage.html" id = "Armor"> Доспехи </A>
+                            
+                                <ul class = "submenu">
+                            <li class = "icon_armor"><a href = "#" title = "Ммм, котелок">Раннее средневековье</a></li>
+                            <li class = "icon_armor"><a href = "#" title = "Ммм, бригантина" >Высокое средневековье</a></li>
+                            <li class = "icon_armor"><a href = "#" title = "Ммм, латы">Позднее средневековье</a></li>
+                                </ul>
+                        </li>
+                            
+                            <li> <A href = "Pages/about_index.html"> О сайте </A> </li>
+                            <li> <A href = "Pages/contacts_index.html" id = "Contact"> Контакты </A> </li>
+                            <li class = "icon"> <A id = "menu" href = "#">&#9776;</A> </li>
+                </ul>
                 </nav> 
                 
-                <!-- <ul id = "Crumbs">
-                    <li> <a href = "#" class = "current">Главная</a> </li>
-                </ul> -->
-                    
             </header>
             
             <div id = "content">
@@ -60,7 +78,6 @@
 33 буквы. По преданию, придумана профессором комбинаторики Санкт-Петербургского государственного университета. Прислал Виктор Баргачев</p>
 
             </div> 
-            
         </div>
             
             <footer id = "Footer">
@@ -71,11 +88,12 @@
                 <br>
                 <p></p>
                 
+                <img class = "foot_img" src = "/DOJ745.github.io/Pictures/Ornaments/Ornament.png">
             </footer>
     
             <!-- Скрипты загрузятся в самом конце -->
-        <script type = 'text/javascript' src = "JS/mobileAdapt.js"></script> 
-        <script type = 'text/javascript' src = "JS/footerParse.js"></script>
+        <script type = 'text/javascript' src = "/DOJ745.github.io/JS/mobileAdapt.js"></script> 
+        <script type = 'text/javascript' src = "/DOJ745.github.io/JS/footerParse.js"></script>
 
 		</BODY>
 		

@@ -45,6 +45,7 @@
     text-align: center;
 }
 
+
 /* Настраиваем блок, в котором будет логотип */
 
 .logo 
@@ -92,12 +93,36 @@
     box-sizing: border-box; 
 }
 
+    /* Границы для картинок и стили для них*/
+
 .foot_img
 {
     width: 320px;
     height: 60px;
     margin: 0 auto;
     margin-bottom: 0px;
+}
+
+
+img.border
+{
+    width: 200px;
+    height: 170px;
+    /*float: left;*/
+    position: relative;
+    
+    border: 27px solid ;
+    margin: 10px 1em 1em 10px;
+    -webkit-border-image: url(../Pictures/Ornaments/Ornament4.png) 25% round;
+    -moz-border-image: url(../Pictures/Ornament4.png) 25% stretch;
+}
+
+.picList
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: left;
 }
 
 
