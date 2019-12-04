@@ -24,7 +24,7 @@ var path_attrs = new Array();
 
 for(let i = 0; i < pictures.length; i++)
 {
-    var path_attrs = pictures[i].push(getAttribute("path"));
+    var path_attrs.push(pictures[i].getAttribute("path"));
     // var path_attr2 = pictures[0].getAttribute("path");
 }
 
