@@ -7,6 +7,7 @@
     padding: 5px;
 }
 
+
 /* "Пролистыватель" - header + content + nav и т.д */
 
 #wrapper 
@@ -49,7 +50,31 @@
 .logo 
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+
+/* Гербы после логотипа */
+
+
+.logo:before
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Flag.svg);
+    display: inline;
+    float: left;
+    width: 245px;
+    height: 165px;
+    position: relative;
+}
+
+.logo:after
+{
+    content: url(/DOJ745.github.io/Pictures/Svg/Flag.svg);
+    display: inline;
+    float: left;
+    width: 245px;
+    height: 165px;
+    position: relative;
 }
 
 /* Настраиваем сам логоип */
@@ -274,7 +299,7 @@ ul.submenu li.icon_axe > a:hover:before
 
 ul.submenu li.icon_wooden > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/Wooden%20weapons3.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Wooden%20weapons.svg);
     display: flex;
     flex: 1;
     width: 28px;
@@ -290,7 +315,7 @@ ul.submenu li.icon_wooden > a:hover:after
 
 ul.submenu li.icon_unique > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/Unique2.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Unique.svg);
     display: flex;
     flex: 1;
     width: 28px;
@@ -305,7 +330,7 @@ ul.submenu li.icon_unique > a:hover:after
 
 ul.submenu li.icon_armor > a:hover:after
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/Armor2.svg);
+    content: url(/DOJ745.github.io/Pictures/Svg/Armor.svg);
     display: flex;
     flex: 1;
     width: 29px;

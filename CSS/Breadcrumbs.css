@@ -37,4 +37,5 @@
 .breadcrumbs a.active
 {
     background-color: #913b1f;
+    text-decoration: underline;
 }
