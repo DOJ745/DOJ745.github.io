@@ -6,7 +6,8 @@
 		<title>Оружие и доспехи средневековья</title>
 		<meta charset = "UTF-8">
         
-        <!-- Иконка -->
+                    <!-- Иконка -->
+        
         <link rel = "SHORTCUT ICON" href = "horseknight.png" type = "image/png">
         
                 <!-- Загружаемые стили -->
@@ -15,7 +16,7 @@
         <link rel = "stylesheet" href = "CSS/ClassesID.css">
         <link rel = "stylesheet" href = "CSS/Mobile.css">
         <link rel = "stylesheet" href = "CSS/Breadcrumbs.css">
-       
+ 
 	</head>
 	
 		<BODY>
@@ -84,13 +85,68 @@
                 <p></p>
 
                 <img class = "foot_img" src = "Pictures/Ornaments/Ornament.png">
-                <div id = "parseTable"></div>
+                
+                    <!-- Таблица -->
+                
+                <table id = "parse_table" border = "2px">
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                </table>
+                       
+            <!-- Парсинг таблицы -->
+        
+         <script type = 'text/javascript'>
+            var table_parse = "<tabl>";
+            table_parse = table_parse + "<td>ФИО</td>";
+            table_parse = table_parse + "<td>Фурсик Андрей Алексеевич</td>";
+            table_parse = table_parse + "<td>Факультет</td>";
+            table_parse = table_parse + "<td>Информационных технологий</td>";
+            table_parse = table_parse + "<td>Специальность</td>";
+            table_parse = table_parse + "<td>ПОИБМС</td>";
+            table_parse = table_parse + "<td>Группа</td>";
+            table_parse = table_parse + "<td>7</td>";
+            table_parse = table_parse + "<td>Год</td>";
+            table_parse = table_parse + "<td>2019</td>";
+            table_parse = table_parse + "</tabl>";
+   
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(table_parse,"text/xml");
+             
+            var table = document.getElementById("parse_table");
+            var table_td = table.getElementsByTagName("td");
+            alert(table_td.length);
+            for(let i = 0; i < table_td.length; i++)
+            {
+              if(i % 2 == 0)
+              {
+                table_td[i].innerHTML = xmlDoc.getElementsByTagName("td")[i].childNodes[0].nodeValue;
+              }
+              else
+              {
+                table_td[i].innerHTML = xmlDoc.getElementsByTagName("td")[i].childNodes[0].nodeValue;
+              }
+            }
+        </script>
+        
             </footer>
     
             <!-- Скрипты загрузятся в самом конце -->
         <script type = 'text/javascript' src = "JS/mobileAdapt.js"></script> 
         <script type = 'text/javascript' src = "JS/footerParse.js"></script>
-            
+    
 		</BODY>
 		
 </HTML>
