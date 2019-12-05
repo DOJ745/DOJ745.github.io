@@ -1,9 +1,11 @@
 if (window.XMLHttpRequest)
-{ // для IE7+, Firefox, Chrome, Opera, Safari
-         xmlhttp = new XMLHttpRequest();
+{ 
+    // для IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
 }
 else
-{ // для IE6, IE5
+{ 
+    // для IE6, IE5
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 }
 
@@ -46,11 +48,23 @@ var footer_parse_table = document.getElementById("parseTable");*/
 }*/
 
 var table_parse = "<table border = '1px'>";
-var table_parse += "<tr><td>ФИО</td><td>Фурсик Андрей Алексеевич</td></tr>";
-var table_parse += "<tr><td>Факультет</td><td>ИТ</td></tr>";
-var table_parse += "<tr><td>Специальность</td><td>ПОИБМС</td></tr>";
-var table_parse += "<tr><td>Группа</td><td>7</td></tr>";
-var table_parse += "<tr><td>Год</td><td>2019</td></tr></table>";
+table_parse = table_parse + "<tr><td>ФИО</td><td>Фурсик Андрей Алексеевич</td></tr>";
+table_parse = table_parse + "<tr><td>Факультет</td><td>ИТ</td></tr>";
+table_parse = table_parse + "<tr><td>Специальность</td><td>ПОИБМС</td></tr>";
+table_parse = table_parse + "<tr><td>Группа</td><td>7</td></tr>";
+table_parse = table_parse + "<tr><td>Год</td><td>2019</td></tr></table>";
 
-var footer_parse_table = document.getElementById("parseTable");
-footer_parse_table.innerHTML = table_parse.innerHTML;
+if (window.DOMParser)
+{
+    parser2 = new DOMParser();
+    xmlDoc2 = parser2.parseFromString(table_parse,"text/xml");
+}
+
+else // Internet Explorer
+{
+    xmlDoc2 = new ActiveXObject("Microsoft.XMLDOM");
+    xmlDoc2.async = false;
+    xmlDoc2.loadXML(table_parse);
+}
+
+document.getElementById("parseTable").innerHTML = table_parse.innerHTML;
