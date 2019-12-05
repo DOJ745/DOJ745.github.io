@@ -47,14 +47,14 @@ var footer_parse_table = document.getElementById("parseTable");*/
     footer_td[i].innerHTML = footer_t[i].innerHTML;
 }*/
 
-var table_parse = "<table border = '1px'>";
+var table_parse = new String("<table border = '1px'>");
 table_parse = table_parse + "<tr><td>ФИО</td><td>Фурсик Андрей Алексеевич</td></tr>";
 table_parse = table_parse + "<tr><td>Факультет</td><td>ИТ</td></tr>";
 table_parse = table_parse + "<tr><td>Специальность</td><td>ПОИБМС</td></tr>";
 table_parse = table_parse + "<tr><td>Группа</td><td>7</td></tr>";
 table_parse = table_parse + "<tr><td>Год</td><td>2019</td></tr></table>";
 
-if (window.DOMParser)
+/*if (window.DOMParser)
 {
     parser2 = new DOMParser();
     xmlDoc2 = parser2.parseFromString(table_parse,"text/xml");
@@ -65,6 +65,6 @@ else // Internet Explorer
     xmlDoc2 = new ActiveXObject("Microsoft.XMLDOM");
     xmlDoc2.async = false;
     xmlDoc2.loadXML(table_parse);
-}
+}*/
 
-document.getElementById("parseTable").innerHTML = table_parse.innerHTML;
+document.getElementById("parseTable").innerHTML = document.write(table_parse);
