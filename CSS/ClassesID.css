@@ -98,7 +98,7 @@ p#parse
     box-sizing: border-box; 
 }
 
-    /* Границы для картинок и стили для них*/
+    /* Границы для картинок и стили для них */
 
 .foot_img
 {
@@ -127,6 +127,21 @@ p#parse
     flex-direction: column;
     justify-content: flex-start;
     float: left;
+}
+
+.picListMain
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.picListMain a
+{
+    margin: 0px auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
