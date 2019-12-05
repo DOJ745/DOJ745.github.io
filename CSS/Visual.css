@@ -65,3 +65,11 @@ figcaption
     margin: 0px auto;
     font-size: 9pt;
 }
+
+table 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 10pt;
+}

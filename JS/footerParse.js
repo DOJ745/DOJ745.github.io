@@ -26,10 +26,21 @@ for(let i = 0; i < footer_parse_p.length; i++)
     footer_parse_p[i].innerHTML = footer_text[i].innerHTML;    
 }
 
-var footer_t = footerInfo[0].getElementsByTagName("t");
-var footer_td = document.getElementsByTagName("td");
+var footer_table = footerInfo[0].getElementsByTagName("tableinfo");
+var footer_parse_table = document.getElementById("parseTable");
 
-for(let i = 0; i < footer_t.length; i++)
+footer_parse_table.innerHTML = footer_table.innerHTML;
+
+/*for(let i = 0, let j = 0; i < footer_td.length; i++)
 {
+    if(i % 2 == 0)
+    {
+        j++;
+        footer_td[i].innerHTML = footer_t[j].innerHTML;
+    }
+    else
+    {
+        footer_td[i].innerHTML = footer_t[i].innerHTML;
+    }
     footer_td[i].innerHTML = footer_t[i].innerHTML;
-}
+}*/
