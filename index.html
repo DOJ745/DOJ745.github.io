@@ -5,10 +5,10 @@
 		<meta name = "viewport" content = "width=device-width, initial-scale=1">
 		<title>Оружие и доспехи средневековья</title>
         <meta charset = "UTF-8">
-        
+
                 <!-- Верификация от Google, чтобы сайт выводился при запросе -->
 
-        <meta name="google-site-verification" content="S6JoP81dJLWhIFSFTUEz9pfT34fAmAAspQ6Kf_NNw1Q" />
+        <meta name = "google-site-verification" content = "S6JoP81dJLWhIFSFTUEz9pfT34fAmAAspQ6Kf_NNw1Q" />
         
                     <!-- Иконка -->
         
@@ -27,24 +27,24 @@
             
         <div id = "wrapper">
             
+            <!-- Заголовок сайта -->
             <header>
                 
+                <!-- Логотип сайта -->
                 <div class = "logo">
                     <img class = "graficlogo" src = "Pictures/logo.png" alt = "LOGO" >
                 </div>
                 
                 <h1 class = "site_name"> Оружие и доспехи средневековья </h1>
                 
-                <div class = "breadcrumbs">
-                    <a class = "active" href = "#">Главная</a>
-                </div>
-                
+                <!-- Навигационное меню -->
                 <nav class = "topnav" id = "myTopnav">
                 <ul class = "nav">
                         
-                    <li><a href = "#"> Главная </a></li> 
-                    <li><a href = "#" id = "Weapon">Оружие</a>
+                    <li><a href = "#" title = "Главная страница"> Главная </a></li> 
+                    <li><a href = "#" id = "Weapon" title = "Главный зал с оружием">Оружие</a>
                             
+                        <!-- Выпадающее подменю -->
                         <ul class = "submenu">
 			             <li class = "icon_sword"><a href = "Pages/Weapon/longsword_index.html" title = "Это цирюльник Рогель">Мечи</a></li>
 			             <li class = "icon_axe"><a href = "#" title = "Помогите">Топоры</a></li>
@@ -54,7 +54,7 @@
                         
                     </li>
                             
-                    <li><a href = "Pages/Armor/ArmorMainpage.html" id = "Armor">Доспехи</a>
+                    <li><a href = "Pages/Armor/ArmorMainpage.html" id = "Armor" title = "Главный зал с доспехами">Доспехи</a>
                             
                         <ul class = "submenu">
                         <li class = "icon_armor"><a href = "#" title = "Ммм, котелок">Раннее средневековье</a></li>
@@ -64,14 +64,20 @@
                             
                     </li>
                             
-                    <li><a href = "Pages/about_index.html">О сайте</a></li>
-                    <li><a href = "Pages/contacts_index.html" id = "Contact"> Контакты</a></li>
+                    <li><a href = "Pages/about_index.html" title = "Общая информация о сайте">О сайте</a></li>
+                    <li><a href = "Pages/contacts_index.html" id = "Contact" title = "Связаться с королём"> Контакты</a></li>
                     <li class = "icon"><a id = "menu" href = "#">&#9776;</a></li>
                 </ul>
                 </nav> 
-                
+
+                <!-- "Хлебные крошки" -->
+                <div class = "breadcrumbs">
+                    <a class = "active" href = "#">Главная</a>
+                </div>
+
             </header>
             
+            <!-- Основное содержимое сайта -->
             <div id = "content">
                 <h1>Добро пожаловать в нашу оружейню, крестьянин!</h1>
                 <h2>Здесь тебя ждут различные виды не только оружия, но и доспехов.
@@ -107,35 +113,24 @@
             </div> 
             
         </div>
-            
-            <footer id = "Footer">
-                
-                <p></p>
-                <br>
-                <p></p>
-                <br>
-                <p></p>
 
+            <!-- Подвал сайта -->
+            <footer id = "Footer">
+                <p></p>
+                <br>
+                <p></p>
+                <br>
+                <p></p>
                 <img class = "foot_img" src = "Pictures/Ornaments/Ornament.png">
                 
                     <!-- Таблица -->
                 
                 <table id = "parse_table" border = "2px">
-                    <tr>
-                        <td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td>
-                    </tr>
+                    <tr> <td></td><td></td> </tr>
+                    <tr> <td></td><td></td> </tr>
+                    <tr> <td></td><td></td> </tr>
+                    <tr> <td></td><td></td> </tr>
+                    <tr> <td></td><td></td> </tr>
                 </table>
                        
             <!-- Парсинг таблицы -->
@@ -174,7 +169,7 @@
         
             </footer>
     
-            <!-- Скрипты загрузятся в самом конце -->
+            <!-- Скрипты -->
         <script type = 'text/javascript' src = "JS/mobileAdapt.js"></script> 
         <script type = 'text/javascript' src = "JS/footerParse.js"></script>
     

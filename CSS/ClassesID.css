@@ -235,7 +235,9 @@ p#parse
 
 .nav ul li
 {
-    
+    /* Делаем подменю выше всех остальных элементов
+    чтобы его не перекрывали другие элементы*/
+    z-index: 9999;
 	padding-top: 2px; 
 	float: none;
 }
@@ -280,7 +282,7 @@ p#parse
 .nav li:hover ul li a:hover
 { 
 	background: #dfc66c;
-	text-decoration: underline;
+    text-decoration: underline;
 	-moz-transform: scale(1.10);
 	-webkit-transform: scale(1.10);
 }
