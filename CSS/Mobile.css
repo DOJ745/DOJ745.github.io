@@ -45,8 +45,8 @@
     
     .border
     {
-        width: 100px;
-        height: 80px;
+        width: 130px;
+        height: 110px;
     }
     
     
@@ -109,5 +109,7 @@
     .picList img
     {
         margin: 0px auto;
+        margin-bottom: 13px;
+        margin-top: 13px;
     }
 }

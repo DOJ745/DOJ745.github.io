@@ -33,21 +33,10 @@ for(let i = 0; i < text_parse.length; i++)
     p_arr[i].innerHTML = text_parse[i].innerHTML;
 }
     
-var img_arr = document.getElementsByTagName("img");
+var img_parse = document.getElementById("picParse");
+var img_arr = img_parse.getElementsByTagName("img");
 for(let i = 0; i < pictures.length; i++)
 {
-    if(img_arr[0].className === "graficlogo")
-    {
-          img_arr[i + 1].setAttribute("src", path_attrs[i]);
-          img_arr[i + 1].setAttribute("class", border_attr);
-    }
-    else if(img_arr[i].className === "foot_img")
-    {
-        i = pictures.length + 1;
-    }
-    else 
-    {
-        img_arr[i].setAttribute("src", path_attrs[i]);
-        img_arr[i].setAttribute("class", border_attr);
-    }
+    img_arr[i].setAttribute("src", path_attrs[i]);
+    img_arr[i].setAttribute("class", border_attr);
 }
