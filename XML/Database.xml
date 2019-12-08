@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- DTD валидация -->
+<!DOCTYPE Syte[
+<!ELEMENT Site (Mainpage, Footer, Contact, About, ArmorMainPage, WeaponMainPage)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT Picture EMPTY>
+<!ATTLIST Picture path PCDATA #REQUIRED>
+<!ATTLIST Picture border PCDATA #FIXED "border">
+]>
+
 <!-- База данных сайта -->
 <Site>
     
