@@ -45,8 +45,8 @@
     
     .border
     {
-        width: 120px;
-        height: 100px;
+        width: 100px;
+        height: 80px;
     }
     
     
@@ -87,7 +87,7 @@
     }
     
     
-            /*-------- Хлебные крошки ----------- */
+            /* -------- Хлебные крошки ----------- */
     
     .breadcrumbs
     {
@@ -95,5 +95,19 @@
         flex-direction: row;
         min-height: 100%;
         min-width: 100%;
+    }
+    
+    /* --------------- Картинки --------------- */
+    
+    .picList 
+    {
+        float: none;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .picList img
+    {
+        margin: 0px auto;
     }
 }
