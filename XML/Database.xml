@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- DTD валидация -->
+<!-- DTD-валидация -->
 <!DOCTYPE Site[
-<!ELEMENT Site (Mainpage, Footer, Contact, About, ArmorMainPage, WeaponMainPage)>
-<!ELEMENT text (#PCDATA)>
+<!ELEMENT Site (Mainpage, WeaponMainPage, ArmorMainPage, Contact, About, Footer)>
+
+<!ATTLIST Site xmlns CDATA #FIXED ''>
+
+<!ELEMENT Mainpage (Picture)+>
+<!ATTLIST Mainpage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT WeaponMainPage (SworsdMainPage,AxesMainPage,WoodenMainPage,
+                          UniqueMainPage)>
+<!ATTLIST WeaponMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ArmorMainPage (EarlyChivarly,MiddleChivarly,LateChivarly)>
+<!ATTLIST ArmorMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Contact (text)>
+<!ATTLIST Contact
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT About (text)+>
+<!ATTLIST About
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Footer (text)+>
+<!ATTLIST Footer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SworsdMainPage (Longsword,Greatsword)>
+<!ATTLIST SworsdMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT AxesMainPage EMPTY>
+<!ATTLIST AxesMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT WoodenMainPage EMPTY>
+<!ATTLIST WoodenMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT UniqueMainPage EMPTY>
+<!ATTLIST UniqueMainPage
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT EarlyChivarly EMPTY>
+<!ATTLIST EarlyChivarly
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT MiddleChivarly EMPTY>
+<!ATTLIST MiddleChivarly
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT LateChivarly EMPTY>
+<!ATTLIST LateChivarly
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Longsword (Picture+,text+)>
+<!ATTLIST Longsword
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Greatsword (Picture+,text)>
+<!ATTLIST Greatsword
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT Picture EMPTY>
-<!ATTLIST Picture path PCDATA #REQUIRED>
-<!ATTLIST Picture border PCDATA #FIXED "border">
+<!ATTLIST Picture
+  xmlns CDATA #FIXED ''
+  border CDATA #REQUIRED
+  path CDATA #REQUIRED>
+
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text xmlns CDATA #FIXED ''>
 ]>
 
 <!-- База данных сайта -->
