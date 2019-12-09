@@ -39,7 +39,7 @@ var border_attr = pic_parse[0].getAttribute("border");
 var pic_locale = document.getElementById("picParse");
 var img_arr = pic_locale.getElementsByTagName("img");
 
-for(let i = 0; i < picList.length; i++)
+for(let i = 0; i < pic_parse.length; i++)
 {
     img_arr[i].setAttribute("src", pic_path[i]);
     img_arr[i].setAttribute("class", border_attr);
