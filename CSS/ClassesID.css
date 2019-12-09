@@ -146,10 +146,17 @@ p#parse
 
 /* --------- Видео с YouTube ---------*/
 
-.video
+div iframe.video
 {
+    display: block;
+    position: relative;
+    margin: 0px auto;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.video
+{
     width: 500px;
     height: 450px;
 }
