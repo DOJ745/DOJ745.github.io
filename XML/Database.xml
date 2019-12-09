@@ -6,7 +6,7 @@
 
 <!ATTLIST Site xmlns CDATA #FIXED ''>
 
-<!ELEMENT Mainpage (Picture)+>
+<!ELEMENT Mainpage (Picture+, text+)>
 <!ATTLIST Mainpage
   xmlns CDATA #FIXED ''>
 
@@ -87,8 +87,15 @@
     <!-- Каждый text соответствует одному абзацу -->
     
     <Mainpage>
-        <Picture path = "" border = ""></Picture>
-        <Picture path = "" border = ""></Picture>
+        <Picture path = "Pictures/Memes/Good%20shoot.jpg" border = "border"></Picture>
+        <Picture path = "Pictures/Memes/Shitty%20play.jpg" border = "border"></Picture>
+        <Picture path = "Pictures/Memes/Snailhunt.jpg" border = "border"></Picture>
+        <Picture path = "Pictures/Memes/Two%20horse%20two%20knights.jpg" border = "border"></Picture>
+        <text>Здесь тебя ждут различные виды не только оружия, но и доспехов.
+                    Всё сияет, пестрит, а на некоторых экспонатах даже есть кровь поверженных врагов! Неприятно конечно, но тут сейчас ведётся работа на скорую руку, так что, привыкай. Ничего не трогать, ничего не воровать, ведь наша бравая стража следит за вами при помощи своего специального чуткого храпа
+                    и пристального взгяда из-под забрала. Мда, лучше бы их ударил кто-нибудь, ей богу. Хотите, можете это сделать, но я вам этого не говорил.
+                    А теперь будьте добры, не стойте столбом, идите смотреть и читать описание, если, конечно, умеете читать...  Ах да, про ту битву на заднем плане... Скажем так, это временные неудобства. Междуусобицы тут дело привычное.</text>
+        <text>Тут ниже есть наша галерея. В ней наши гордые художники запечатлели весьма интересные моменты.</text>
     </Mainpage>
     
     <WeaponMainPage>

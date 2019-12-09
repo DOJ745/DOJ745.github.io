@@ -101,6 +101,13 @@ p#parse
 
     /* Границы для картинок и стили для них */
 
+#main_pic
+{
+    display: flex;
+    width: 850px;
+    height: 550px;
+}
+
 .foot_img
 {
     width: 320px;
@@ -138,7 +145,24 @@ p#parse
     flex-wrap: wrap;
 }
 
-.picListMain a
+.picListMainpage
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.picListMainpage img
+{
+    margin: 0px auto;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.picListMain img
 {
     margin: 0px auto;
     margin-bottom: 10px;
