@@ -45,6 +45,7 @@
     text-align: center;
 }
 
+    /* Стили для таблицы */
 p#parse
 {
     position: relative;
@@ -111,14 +112,14 @@ p#parse
 
 .border
 {
-    width: 11em;
+    width: 13em;
     height: 11em;
     position: relative;
     
-    border: 27px solid ;
-    margin: 10px 1em 1em 10px;
+    border: 30px solid;
+    margin: 10px 10px 10px 5px;
     -webkit-border-image: url(../Pictures/Ornaments/Ornament4.png) 25% round;
-    -moz-border-image: url(../Pictures/Ornament4.png) 25% stretch;
+    -moz-border-image: url(../Pictures/Ornament4.png) 25% round;
 }
 
 .picList
@@ -161,9 +162,6 @@ div iframe.video
     height: 450px;
 }
 
-
-
- 
             /* ---------------- Выпадающее меню ---------------- */
 
 
@@ -294,7 +292,7 @@ div iframe.video
     -moz-transition: -moz-transform 0.266s ease;
 }
 
-/* Устанавливаем стили для выпадающих пунктов при наведении курсора*/
+/* Устанавливаем стили для выпадающих пунктов при наведении курсора */
 
 .nav li:hover ul li a:hover
 { 
