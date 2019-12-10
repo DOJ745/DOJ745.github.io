@@ -43,7 +43,7 @@
 <!ATTLIST WoodenMainPage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT UniqueMainPage EMPTY>
+<!ELEMENT UniqueMainPage (Mace,Warhammer)>
 <!ATTLIST UniqueMainPage
   xmlns CDATA #FIXED ''>
 
@@ -85,6 +85,14 @@
 
 <!ELEMENT Spear (Picture+,text+)>
 <!ATTLIST Spear
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Mace (Picture+,text+)>
+<!ATTLIST Mace
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Warhammer (Picture+,text+)>
+<!ATTLIST Warhammer
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT Picture EMPTY>
@@ -195,9 +203,10 @@
         <WoodenMainPage>
             
             <Poleaxe>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/poleaxe1.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/poleaxe2.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/poleaxe3.jpeg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/poleaxe4.jpg" border = "border"></Picture>
                 <text></text>
                 <text></text>
                 <text></text>
@@ -215,6 +224,25 @@
         </WoodenMainPage>
         
         <UniqueMainPage>
+            
+            <Mace>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Mace>
+            
+            <Warhammer>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Warhammer>
+                
         </UniqueMainPage>
         
     </WeaponMainPage>
