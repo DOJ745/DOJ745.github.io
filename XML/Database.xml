@@ -150,6 +150,28 @@
         </SworsdMainPage>
         
         <AxesMainPage>
+            
+            <Beardaxe>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = ""></Picture>
+                <text></text>
+            </Beardaxe>
+            
+            <Brodecs>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+            </Brodecs>
+            
+            <Valashka>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+            </Valashka>
+            
         </AxesMainPage>
         
         <WoodenMainPage>
