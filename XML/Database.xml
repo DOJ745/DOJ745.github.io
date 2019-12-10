@@ -31,7 +31,7 @@
 <!ATTLIST Footer
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT SworsdMainPage (Longsword,Falshion,Zwai,Picture+)>
+<!ELEMENT SworsdMainPage (Picture+,Longsword,Falshion,Zwai)>
 <!ATTLIST SworsdMainPage
   xmlns CDATA #FIXED ''>
 
