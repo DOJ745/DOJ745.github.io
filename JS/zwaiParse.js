@@ -15,9 +15,9 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
         
-var longswordInfo = doc.getElementsByTagName("Zwai");
-var pictures = longswordInfo[0].getElementsByTagName("Picture");
-var text_parse = longswordInfo[0].getElementsByTagName("text");
+var swordInfo = doc.getElementsByTagName("Zwai");
+var pictures = swordInfo[0].getElementsByTagName("Picture");
+var text_parse = swordInfo[0].getElementsByTagName("text");
 
 var p_arr = document.getElementsByTagName("p");
 for(let i = 0; i < text_parse.length; i++)

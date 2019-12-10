@@ -15,7 +15,7 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
         
-var swordInfo = doc.getElementsByTagName("Longsword");
+var swordInfo = doc.getElementsByTagName("Falshion");
 var pictures = swordInfo[0].getElementsByTagName("Picture");
 var text_parse = swordInfo[0].getElementsByTagName("text");
 
