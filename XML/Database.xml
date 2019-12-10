@@ -31,7 +31,7 @@
 <!ATTLIST Footer
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT SworsdMainPage (Longsword,Falshion,Zwai,text+,Picture+)>
+<!ELEMENT SworsdMainPage (Longsword,Falshion,Zwai,Picture+)>
 <!ATTLIST SworsdMainPage
   xmlns CDATA #FIXED ''>
 
@@ -104,7 +104,7 @@
             <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword1.jpg" border = "border"></Picture>
             <text></text>
             <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/zwai2.jpg" border = "border"></Picture>
-            <text></text>
+            <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/falshion3.jpg" border = "border"></Picture>
             
 
             <Longsword>
