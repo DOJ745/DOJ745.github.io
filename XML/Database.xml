@@ -10,7 +10,7 @@
 <!ATTLIST Mainpage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT WeaponMainPage (SworsdMainPage,AxesMainPage,WoodenMainPage,
+<!ELEMENT WeaponMainPage (Picture+,SworsdMainPage,AxesMainPage,WoodenMainPage,
                           UniqueMainPage)>
 <!ATTLIST WeaponMainPage
   xmlns CDATA #FIXED ''>
@@ -35,7 +35,7 @@
 <!ATTLIST SworsdMainPage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT AxesMainPage EMPTY>
+<!ELEMENT AxesMainPage (Beardaxe, Brodecs, Valashka)>
 <!ATTLIST AxesMainPage
   xmlns CDATA #FIXED ''>
 
@@ -67,8 +67,16 @@
 <!ATTLIST Falshion
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT Zwai (Picture+,text+)>
-<!ATTLIST Zwai
+<!ELEMENT Beardaxe (Picture+,text+)>
+<!ATTLIST Beardaxe
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Brodecs (Picture+,text+)>
+<!ATTLIST Brodecs
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Valashka (Picture+,text+)>
+<!ATTLIST Valashka
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT Picture EMPTY>
@@ -99,6 +107,9 @@
     </Mainpage>
     
     <WeaponMainPage>
+        <Picture path = "" border = ""></Picture>
+        <Picture path = "" border = ""></Picture>
+        <Picture path = "" border = ""></Picture>
         
         <SworsdMainPage>
 
