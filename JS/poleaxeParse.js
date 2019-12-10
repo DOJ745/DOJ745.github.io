@@ -15,7 +15,7 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
         
-var weapondInfo = doc.getElementsByTagName("Poleaxe");
+var weaponInfo = doc.getElementsByTagName("Poleaxe");
 var pictures = weaponInfo[0].getElementsByTagName("Picture");
 var text_parse = weaponInfo[0].getElementsByTagName("text");
 
@@ -35,7 +35,7 @@ for(let i = 0; i < pictures.length; i++)
     
 var img_parse = document.getElementById("picParse");
 var img_arr = img_parse.getElementsByTagName("img");
-for(let i = 0; i < pictures.length; i++)
+for(let i = 0; i < img_arr.length; i++)
 {
     img_arr[i].setAttribute("src", path_attrs[i]);
     img_arr[i].setAttribute("class", border_attr);
