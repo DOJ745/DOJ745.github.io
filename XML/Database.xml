@@ -152,23 +152,23 @@
         <AxesMainPage>
             
             <Beardaxe>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = ""></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/beardaxe1.jpeg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/beardaxe2.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/beardaxe3.jpg" border = ""></Picture>
                 <text></text>
             </Beardaxe>
             
             <Brodecs>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/brodecs1.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/brodecs2.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/brodecs3.jpg" border = "border"></Picture>
                 <text></text>
             </Brodecs>
             
             <Valashka>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
-                <Picture path = "" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/valashka1.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/valashka2.jpg" border = "border"></Picture>
+                <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/valashka3.jpg" border = "border"></Picture>
                 <text></text>
             </Valashka>
             
