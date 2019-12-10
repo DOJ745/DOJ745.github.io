@@ -39,7 +39,7 @@
 <!ATTLIST AxesMainPage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT WoodenMainPage EMPTY>
+<!ELEMENT WoodenMainPage (Poleaxe,Spear)>
 <!ATTLIST WoodenMainPage
   xmlns CDATA #FIXED ''>
 
@@ -77,6 +77,14 @@
 
 <!ELEMENT Valashka (Picture+,text+)>
 <!ATTLIST Valashka
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Poleaxe (Picture+,text+)>
+<!ATTLIST Poleaxe
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Spear (Picture+,text+)>
+<!ATTLIST Spear
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT Picture EMPTY>
@@ -185,6 +193,25 @@
         </AxesMainPage>
         
         <WoodenMainPage>
+            
+            <Poleaxe>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Poleaxe>
+            
+            <Spear>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Spear>
+            
         </WoodenMainPage>
         
         <UniqueMainPage>
