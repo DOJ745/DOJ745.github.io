@@ -15,9 +15,9 @@ xmlDoc = xmlhttp.responseText;
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
 
-var all_weaponInfo = doc.getElementsByTagName("WeaponMainPage");
-var weaponParse = all_weaponInfo[0].getElementsByTagName("Parsing");
-var pictures = weaponParse[0].getElementsByTagName("Picture");
+var all_armorInfo = doc.getElementsByTagName("ArmorMainPage");
+var armorParse = all_armorInfo[0].getElementsByTagName("Parsing");
+var pictures = armorParse[0].getElementsByTagName("Picture");
 
 var border_attr = pictures[0].getAttribute("border");
 var path_attrs = new Array();

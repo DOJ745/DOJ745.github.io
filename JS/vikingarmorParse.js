@@ -14,10 +14,16 @@ xmlDoc = xmlhttp.responseText;
 
 var parser = new DOMParser();
 var doc = parser.parseFromString(xmlDoc, "application/xml");
+        
+var armorInfo = doc.getElementsByTagName("Viking");
+var pictures = armorInfo[0].getElementsByTagName("Picture");
+var text_parse = armorInfo[0].getElementsByTagName("text");
 
-var all_weaponInfo = doc.getElementsByTagName("WeaponMainPage");
-var weaponParse = all_weaponInfo[0].getElementsByTagName("Parsing");
-var pictures = weaponParse[0].getElementsByTagName("Picture");
+var p_arr = document.getElementsByTagName("p");
+for(let i = 0; i < text_parse.length; i++)
+{
+    p_arr[i].innerHTML = text_parse[i].innerHTML;
+}
 
 var border_attr = pictures[0].getAttribute("border");
 var path_attrs = new Array();
@@ -29,7 +35,7 @@ for(let i = 0; i < pictures.length; i++)
     
 var img_parse = document.getElementById("picParse");
 var img_arr = img_parse.getElementsByTagName("img");
-for(let i = 0; i < img_arr.length; i++)
+for(let i = 0; i < pictures.length; i++)
 {
     img_arr[i].setAttribute("src", path_attrs[i]);
     img_arr[i].setAttribute("class", border_attr);

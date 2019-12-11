@@ -15,7 +15,7 @@
 <!ATTLIST WeaponMainPage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT ArmorMainPage (EarlyChivarly,MiddleChivarly,LateChivarly)>
+<!ELEMENT ArmorMainPage (Parsing,EarlyChivarly,MiddleChivarly,LateChivarly)>
 <!ATTLIST ArmorMainPage
   xmlns CDATA #FIXED ''>
 
@@ -51,15 +51,15 @@ xmlns CDATA #FIXED ''>
 <!ATTLIST UniqueMainPage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT EarlyChivarly EMPTY>
+<!ELEMENT EarlyChivarly (Viking)>
 <!ATTLIST EarlyChivarly
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT MiddleChivarly EMPTY>
+<!ELEMENT MiddleChivarly (Cross)>
 <!ATTLIST MiddleChivarly
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT LateChivarly EMPTY>
+<!ELEMENT LateChivarly (French)>
 <!ATTLIST LateChivarly
   xmlns CDATA #FIXED ''>
 
@@ -97,6 +97,18 @@ xmlns CDATA #FIXED ''>
 
 <!ELEMENT Warhammer (Picture+,text+)>
 <!ATTLIST Warhammer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Viking (Picture+,text+)>
+<!ATTLIST Viking
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cross (Picture+,text+)>
+<!ATTLIST Cross
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT French (Picture+,text+)>
+<!ATTLIST French
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT Picture EMPTY>
@@ -270,13 +282,49 @@ xmlns CDATA #FIXED ''>
     
     <ArmorMainPage>
         
+        <Parsing>
+            <Picture path = "" border = "border"></Picture>
+            <Picture path = "" border = "border"></Picture>
+            <Picture path = "" border = "border"></Picture>
+        </Parsing>
+        
         <EarlyChivarly>
+            
+            <Viking>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Viking>
+                
         </EarlyChivarly>
         
         <MiddleChivarly>
+            
+            <Cross>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </Cross>
+            
         </MiddleChivarly>
         
         <LateChivarly>
+            
+            <French>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <Picture path = "" border = "border"></Picture>
+                <text></text>
+                <text></text>
+                <text></text>
+            </French>
+            
         </LateChivarly>
         
     </ArmorMainPage>

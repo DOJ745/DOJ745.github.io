@@ -3,7 +3,7 @@
 
 	<head>
 		<meta name = "viewport" content = "width=device-width, initial-scale=1">
-		<title>Доспехи | Оружие и доспехи средневековья</title>
+		<title>Доспех викинга | Оружие и доспехи средневековья</title>
 		<meta charset = "UTF-8">
         
                     <!-- Иконка -->
@@ -15,9 +15,8 @@
         <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Visual.css">
         <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/ClassesID.css">
         <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Mobile.css">
-        <link rel = "stylesheet" href =  "/DOJ745.github.io/CSS/Test.css">
         <link rel = "stylesheet" href = "/DOJ745.github.io/CSS/Breadcrumbs.css">
-		
+ 
 	</head>
 	
 		<BODY>
@@ -27,16 +26,16 @@
             <header>
                 
                 <div class = "logo">
-                    <img class = "graficlogo" src = "/DOJ745.github.io/Pictures/logo.png" alt = "LOGO" >
+                    <a href = "/DOJ745.github.io/index.html"><img class = "graficlogo" src = "/DOJ745.github.io/Pictures/logo.png" alt = "LOGO" title = "Поскакать на главную"></a>
                 </div>
                 
                 <h1 class = "site_name"> Оружие и доспехи средневековья </h1>
                 
-               <nav class = "topnav" id = "myTopnav">
+                <nav class = "topnav" id = "myTopnav">
                 <ul class = "nav">
                         
                 <li> <a href = "/DOJ745.github.io/index.html" title = "Вернуться на главную"> Главная </a> </li>
-                <li> <a href = "#" id = "Weapon" title = "Главный зал с оружием"> Оружие </a>
+                <li> <a href = "/DOJ745.github.io/Pages/Weapon/WeaponMainpage.html" id = "Weapon" title = "Главный зал с оружием"> Оружие </a>
                             
                     <ul class = "submenu">
 			         <li class = "icon_sword"><a href = "/DOJ745.github.io/Pages/Weapon/SwordsMainpage.html" title = "Все мечи">Мечи</a></li>
@@ -47,7 +46,7 @@
                             
                 </li>
                 
-                <li> <a href = "#" id = "Armor" title = "Все доспехи"> Доспехи </a>
+                <li> <a href = "/DOJ745.github.io/Pages/Armor/ArmorMainpage.html" id = "Armor" title = "Все доспехи"> Доспехи </a>
                             
                     <ul class = "submenu">
                     <li class = "icon_armor"><a href = "/DOJ745.github.io/Pages/Armor/EarlyChivarlyMainpage.html" title = "Ммм, котелок">Раннее средневековье</a></li>
@@ -61,47 +60,46 @@
                     <li> <a href = "/DOJ745.github.io/Pages/contacts_index.html" id = "Contact" title = "Связаться с королём">Контакты</a> </li>
                     <li class = "icon"> <a id = "menu" href = "#">&#9776;</a> </li>
                 </ul>
-                </nav>
-                
+                </nav> 
+                                
                 <div class = "breadcrumbs">
                     <a href = "/DOJ745.github.io/index.html" title = "Вернуться на главную">Главная</a>
-                    <a class = "active">Доспехи</a>
+                    <a href = "ArmorMainpage.html" title = "К доспехам">Доспехи</a>
+                    <a href = "EarlyChivarlyMainpage.html" title = "В Ранее средневековье">Ранее средневековье</a>
+                    <a class = "active" href = "#" title = "Доспех викинга">Доспех викинга</a>
                 </div>
                 
             </header>
             
             <div id = "content">
                 
-                <div class = "picListMainpage" id = "picParse">
-                <h1>Как только люди начали убивать друг друга, то они быстро поняли, что себя стоит защитить. В дальнейшем они понимали, что надо защищать всего дорогого такого одного себя, пока есть время. Так что шукуру натягиваем на пузо, на голову надеваем чугунный котелок, в котором раньше был суп, и вперёд!</h1>
-                <a href = "vikingArmor.html" title = "Доспех викинга"><h2>Доспех викинга</h2></a>
-                <img src = "" class = "" alt = "ARMOR1">
-                <a href = "crossArmor.html" title = "Доспех крестоносца"><h2>Доспех крестоносца</h2></a>
-                <img src = "" class = "" alt = "ARMOR2">
-                <a href = "frenchArmor.html" title = "Доспех французского рыцаря 15-16 вв"><h2>Доспех французского рыцаря 15-16 вв</h2></a>
-                <img src = "" class = "" alt = "ARMOR3">
+                <div class = "picList" id = "picParse">
+                <img src = "" class = "" alt = "">
+                <figcaption></figcaption>
                 </div>
                 
-            </div>
+                <p></p>
+                <br>
+                <p></p>
+                <br>
+                <p></p>
+            </div> 
             
         </div>
             
             <footer id = "Footer">
-                
                 <p></p>
                 <br>
                 <p></p>
                 <br>
                 <p></p>
-                
                 <img class = "foot_img" src = "/DOJ745.github.io/Pictures/Ornaments/Ornament.png">
             </footer>
     
-            <!-- Скрипты загрузятся в самом конце -->
+                <!-- Скрипты загрузятся в самом конце -->
         <script type = 'text/javascript' src = "/DOJ745.github.io/JS/mobileAdapt.js"></script> 
         <script type = 'text/javascript' src = "/DOJ745.github.io/JS/footerParse.js"></script>
-        <script type = 'text/javascript' src = "/DOJ745.github.io/JS/armorpageParse.js"></script>
-
+        <script type = 'text/javascript' src = "/DOJ745.github.io/JS/vikingarmorParse.js"></script>
 		</BODY>
 		
 </HTML>
