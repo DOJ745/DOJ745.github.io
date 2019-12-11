@@ -10,7 +10,7 @@
 <!ATTLIST Mainpage
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT WeaponMainPage (Picture+,SworsdMainPage,AxesMainPage,WoodenMainPage,
+<!ELEMENT WeaponMainPage (Parsing,SworsdMainPage,AxesMainPage,WoodenMainPage,
                           UniqueMainPage)>
 <!ATTLIST WeaponMainPage
   xmlns CDATA #FIXED ''>
@@ -30,6 +30,10 @@
 <!ELEMENT Footer (text)+>
 <!ATTLIST Footer
   xmlns CDATA #FIXED ''>
+
+<!ELEMENT Parsing (Picture+)>
+<!ATTLIST Parsing
+xmlns CDATA #FIXED ''>
 
 <!ELEMENT SworsdMainPage (Longsword,Falshion,Zwai)>
 <!ATTLIST SworsdMainPage
@@ -123,9 +127,19 @@
     </Mainpage>
     
     <WeaponMainPage>
-        <Picture path = "" border = ""></Picture>
-        <Picture path = "" border = ""></Picture>
-        <Picture path = "" border = ""></Picture>
+        
+        <Parsing>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/falshion3.jpg" border = "borer"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/Longsword2.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Swords/zwai1.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/brodecs2.jpg" border = "borer"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/valashka1.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Axes/beardaxe3.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Unique/mace3.jpg" border = "borer"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Unique/warhammer4.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/poleaxe1.jpg" border = "border"></Picture>
+        <Picture path = "/DOJ745.github.io/Pictures/Weapon/Wooden/spear4.jpeg" border = "border"></Picture>
+        </Parsing>
         
         <SworsdMainPage>
 

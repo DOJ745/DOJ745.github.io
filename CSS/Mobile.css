@@ -132,6 +132,12 @@
         height: 150px; 
     }
     
+    .picListMainpage a
+    {
+        width: 250px;
+        height: 150px; 
+    }
+    
     /* ------------- Видео с YouTube -------------*/
     
     .video
