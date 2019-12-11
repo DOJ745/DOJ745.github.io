@@ -283,9 +283,9 @@ xmlns CDATA #FIXED ''>
     <ArmorMainPage>
         
         <Parsing>
-            <Picture path = "" border = "border"></Picture>
-            <Picture path = "" border = "border"></Picture>
-            <Picture path = "" border = "border"></Picture>
+            <Picture path = "/DOJ745.github.io/Pictures/Armor/viking4.jpg" border = "border"></Picture>
+            <Picture path = "/DOJ745.github.io/Pictures/Armor/cross1.jpg" border = "border"></Picture>
+            <Picture path = "/DOJ745.github.io/Pictures/Armor/french1.jpg" border = "border"></Picture>
         </Parsing>
         
         <EarlyChivarly>
