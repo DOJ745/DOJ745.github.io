@@ -176,12 +176,12 @@ p#parse
 
 .picListMainpage a
 {
-    margin: 0px auto;
-    width: 350px;
-    height: 290px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    text-decoration: none;
+    color: darkred;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
+
 
 .picListMain img
 {
