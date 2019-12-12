@@ -22,7 +22,7 @@
 
 .breadcrumbs a:before
 {
-    content: url(/DOJ745.github.io/Pictures/Svg/archer.svg);
+    content: url(../Pictures/Svg/archer.svg);
     position: relative;
     display: flex;
     flex: 1;
